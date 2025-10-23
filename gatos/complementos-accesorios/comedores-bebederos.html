@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comederos y Bebederos para Gatos | Pekitass</title>
+  <meta name="description" content="Comederos, bebederos y fuentes de agua para la alimentación e hidratación de tu gato.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Gatos / Accesorios / Comederos y Bebederos</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-comedero-01.jpg" alt="Plato de Cerámica Ancho y Bajo" class="service-img-icon"></div>
+          <div class="service-title">Plato de Cerámica Ancho y Bajo</div>
+          <div class="service-desc">Diseño especial para evitar la fatiga de los bigotes. Higiénico y fácil de limpiar.</div>
+          <div class="product-price">$30,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Plato de Cerámica Ancho y Bajo">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-comedero-02.jpg" alt="Fuente de Agua Automática con Filtro" class="service-img-icon"></div>
+          <div class="service-title">Fuente de Agua Automática con Filtro</div>
+          <div class="service-desc">Incentiva a tu gato a beber más agua manteniéndola fresca, filtrada y en movimiento.</div>
+          <div class="product-price">$150,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Fuente de Agua Automática con Filtro">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-comedero-03.jpg" alt="Comedero Elevado Inclinado" class="service-img-icon"></div>
+          <div class="service-title">Comedero Elevado Inclinado</div>
+          <div class="service-desc">Mejora la postura al comer y reduce los vómitos en algunos gatos.</div>
+          <div class="product-price">$45,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Comedero Elevado Inclinado">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-comedero-04.jpg" alt="Dispensador de Comida Lento" class="service-img-icon"></div>
+          <div class="service-title">Dispensador de Comida Lento</div>
+          <div class="service-desc">Ayuda a que tu gato coma más despacio, mejorando la digestión.</div>
+          <div class="product-price">$38,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Dispensador de Comida Lento">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-comedero-05.jpg" alt="Plato Doble de Acero Inoxidable" class="service-img-icon"></div>
+          <div class="service-title">Plato Doble de Acero Inoxidable</div>
+          <div class="service-desc">Un plato para el agua y otro para la comida, en una base estable.</div>
+          <div class="product-price">$35,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Plato Doble de Acero Inoxidable">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-comedero-06.jpg" alt="Bebedero de Botella para Jaula" class="service-img-icon"></div>
+          <div class="service-title">Bebedero de Botella para Jaula</div>
+          <div class="service-desc">Ideal para viajes o para mantener el agua limpia en guacales y jaulas.</div>
+          <div class="product-price">$25,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Bebedero de Botella para Jaula">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

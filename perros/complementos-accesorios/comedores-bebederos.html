@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comederos y Bebederos para Perros | Pekitass</title>
+  <meta name="description" content="Comederos, bebederos y dispensadores para la alimentación e hidratación de tu perro.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Perros / Accesorios / Comederos y Bebederos</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/comedero-01.jpg" alt="Plato de Acero Inoxidable Antideslizante" class="service-img-icon"></div>
+          <div class="service-title">Plato de Acero Inoxidable Antideslizante</div>
+          <div class="service-desc">Higiénico, duradero y con base de goma para evitar que se mueva.</div>
+          <div class="product-price">$20,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Plato de Acero Inoxidable Antideslizante">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/comedero-02.jpg" alt="Comedero Lento para Ansiedad" class="service-img-icon"></div>
+          <div class="service-title">Comedero Lento para Ansiedad</div>
+          <div class="service-desc">Ayuda a que tu perro coma más despacio, mejorando la digestión y reduciendo la ansiedad.</div>
+          <div class="product-price">$35,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Comedero Lento para Ansiedad">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/comedero-03.jpg" alt="Bebedero Portátil para Paseos" class="service-img-icon"></div>
+          <div class="service-title">Bebedero Portátil para Paseos</div>
+          <div class="service-desc">Botella con dispensador de agua, ideal para mantener a tu perro hidratado fuera de casa.</div>
+          <div class="product-price">$30,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Bebedero Portátil para Paseos">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/comedero-04.jpg" alt="Comedero Elevado Doble" class="service-img-icon"></div>
+          <div class="service-title">Comedero Elevado Doble</div>
+          <div class="service-desc">Mejora la postura al comer y es ideal para perros de razas grandes o con problemas de cuello.</div>
+          <div class="product-price">$70,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Comedero Elevado Doble">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/comedero-05.jpg" alt="Dispensador Automático de Comida" class="service-img-icon"></div>
+          <div class="service-title">Dispensador Automático de Comida</div>
+          <div class="service-desc">Programa las comidas de tu perro para que nunca se salte una.</div>
+          <div class="product-price">$200,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Dispensador Automático de Comida">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/comedero-06.jpg" alt="Fuente de Agua Automática" class="service-img-icon"></div>
+          <div class="service-title">Fuente de Agua Automática</div>
+          <div class="service-desc">Mantiene el agua fresca y en movimiento, incentivando a tu perro a beber más.</div>
+          <div class="product-price">$150,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Fuente de Agua Automática">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

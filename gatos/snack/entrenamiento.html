@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snacks de Entrenamiento para Gatos | Pekitass</title>
+  <meta name="description" content="Premios pequeños y sabrosos, perfectos para el adiestramiento y refuerzo positivo en gatos.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Gatos / Snack / Entrenamiento</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-training-01.jpg" alt="Trocitos de Atún Liofilizado 50g" class="service-img-icon"></div>
+          <div class="service-title">Trocitos de Atún Liofilizado 50g</div>
+          <div class="service-desc">Premio de alto valor, 100% natural y muy apetecido por los gatos.</div>
+          <div class="product-price">$22,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Trocitos de Atún Liofilizado 50g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-training-02.jpg" alt="Premios Suaves Sabor Pollo 80g" class="service-img-icon"></div>
+          <div class="service-title">Premios Suaves Sabor Pollo 80g</div>
+          <div class="service-desc">Pequeños bocados de textura blanda, fáciles de comer rápidamente.</div>
+          <div class="product-price">$14,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Premios Suaves Sabor Pollo 80g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-training-03.jpg" alt="Gotas de Yogur para Gatos 75g" class="service-img-icon"></div>
+          <div class="service-title">Gotas de Yogur para Gatos 75g</div>
+          <div class="service-desc">Un premio diferente y delicioso que les encanta.</div>
+          <div class="product-price">$16,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Gotas de Yogur para Gatos 75g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-training-04.jpg" alt="Barritas de Salmón y Pavo" class="service-img-icon"></div>
+          <div class="service-title">Barritas de Salmón y Pavo</div>
+          <div class="service-desc">Barritas semi-húmedas que se pueden partir en trozos pequeños.</div>
+          <div class="product-price">$13,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Barritas de Salmón y Pavo">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-training-05.jpg" alt="Premios Bajos en Calorías 60g" class="service-img-icon"></div>
+          <div class="service-title">Premios Bajos en Calorías 60g</div>
+          <div class="service-desc">Ideales para gatos con tendencia al sobrepeso, para premiar sin culpa.</div>
+          <div class="product-price">$18,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Premios Bajos en Calorías 60g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-training-06.jpg" alt="Crema de Atún en Tubo" class="service-img-icon"></div>
+          <div class="service-title">Crema de Atún en Tubo</div>
+          <div class="service-desc">Un premio en formato de pasta para lamer, ideal para refuerzo positivo.</div>
+          <div class="product-price">$20,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Crema de Atún en Tubo">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

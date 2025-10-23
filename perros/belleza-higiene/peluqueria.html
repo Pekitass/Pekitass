@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peluquería para Perros | Pekitass</title>
+  <meta name="description" content="Máquinas, tijeras y accesorios para mantener el pelaje de tu perro siempre perfecto.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Perros / Belleza e Higiene / Peluquería</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/peluqueria-01.jpg" alt="Máquina Peluquera Inalámbrica" class="service-img-icon"></div>
+          <div class="service-title">Máquina Peluquera Inalámbrica</div>
+          <div class="service-desc">Kit completo con diferentes guías de corte, silenciosa y fácil de usar.</div>
+          <div class="product-price">$150,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Máquina Peluquera Inalámbrica">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/peluqueria-02.jpg" alt="Tijeras de Entresacar de Acero" class="service-img-icon"></div>
+          <div class="service-title">Tijeras de Entresacar de Acero</div>
+          <div class="service-desc">Ideales para reducir el volumen del pelaje y dar un acabado profesional.</div>
+          <div class="product-price">$45,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Tijeras de Entresacar de Acero">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/peluqueria-03.jpg" alt="Cepillo Deslanador tipo Furminator" class="service-img-icon"></div>
+          <div class="service-title">Cepillo Deslanador tipo Furminator</div>
+          <div class="service-desc">Elimina eficazmente el pelo muerto y reduce la muda hasta en un 90%.</div>
+          <div class="product-price">$60,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Cepillo Deslanador tipo Furminator">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/peluqueria-04.jpg" alt="Kit de Tijeras (Recta, Curva, Entresacar)" class="service-img-icon"></div>
+          <div class="service-title">Kit de Tijeras (Recta, Curva, Entresacar)</div>
+          <div class="service-desc">Set completo para realizar cortes de precisión en diferentes áreas del cuerpo.</div>
+          <div class="product-price">$120,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Kit de Tijeras (Recta, Curva, Entresacar)">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/peluqueria-05.jpg" alt="Soplador/Secador de Pelo para Mascotas" class="service-img-icon"></div>
+          <div class="service-title">Soplador/Secador de Pelo para Mascotas</div>
+          <div class="service-desc">Potente y con diferentes niveles de calor para un secado rápido y seguro.</div>
+          <div class="product-price">$250,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Soplador/Secador de Pelo para Mascotas">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/peluqueria-06.jpg" alt="Peine Metálico Doble para Nudos" class="service-img-icon"></div>
+          <div class="service-title">Peine Metálico Doble para Nudos</div>
+          <div class="service-desc">Ayuda a deshacer nudos y enredos sin lastimar la piel de tu mascota.</div>
+          <div class="product-price">$20,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Peine Metálico Doble para Nudos">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

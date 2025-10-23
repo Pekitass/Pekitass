@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alimento Húmedo para Perros | Pekitass</title>
+  <meta name="description" content="Deliciosos patés y trozos en salsa para perros. Alimento húmedo de las mejores marcas.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Perros / Alimento / Húmedo</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/dog-wet-food-01.jpg" alt="Lata Pavo y Vegetales 370g" class="service-img-icon"></div>
+          <div class="service-title">Lata Pavo y Vegetales 370g</div>
+          <div class="service-desc">Jugosos trozos de pavo con vegetales en una salsa irresistible.</div>
+          <div class="product-price">$12,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Lata Pavo y Vegetales 370g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/dog-wet-food-02.jpg" alt="Paté de Salmón para Cachorros 150g" class="service-img-icon"></div>
+          <div class="service-title">Paté de Salmón para Cachorros 150g</div>
+          <div class="service-desc">Textura suave y fácil de digerir, ideal para los más pequeños.</div>
+          <div class="product-price">$9,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Paté de Salmón para Cachorros 150g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/dog-wet-food-03.jpg" alt="Gourmet Pollo y Arroz Lata 370g" class="service-img-icon"></div>
+          <div class="service-title">Gourmet Pollo y Arroz Lata 370g</div>
+          <div class="service-desc">Receta clásica y deliciosa que les encanta a todos los perros.</div>
+          <div class="product-price">$11,500 COP</div>
+          <button class="service-btn buy-btn" data-product="Gourmet Pollo y Arroz Lata 370g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/dog-wet-food-04.jpg" alt="Sobre Carne de Res en Gravy 100g" class="service-img-icon"></div>
+          <div class="service-title">Sobre Carne de Res en Gravy 100g</div>
+          <div class="service-desc">Práctica porción individual para mezclar con su concentrado o dar sola.</div>
+          <div class="product-price">$5,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Sobre Carne de Res en Gravy 100g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/dog-wet-food-05.jpg" alt="Lata Senior Cordero y Patata 370g" class="service-img-icon"></div>
+          <div class="service-title">Lata Senior Cordero y Patata 370g</div>
+          <div class="service-desc">Fórmula suave y con menos grasa para perros mayores de 7 años.</div>
+          <div class="product-price">$13,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Lata Senior Cordero y Patata 370g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/dog-wet-food-06.jpg" alt="Pack x4 Sobres Sabores Surtidos" class="service-img-icon"></div>
+          <div class="service-title">Pack x4 Sobres Sabores Surtidos</div>
+          <div class="service-desc">Una selección de los sabores favoritos de tu perro en un práctico paquete.</div>
+          <div class="product-price">$18,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Pack x4 Sobres Sabores Surtidos">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

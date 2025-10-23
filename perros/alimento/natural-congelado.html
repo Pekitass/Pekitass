@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alimento Natural Congelado para Perros | Pekitass</title>
+  <meta name="description" content="Alimento BARF y dietas naturales congeladas para una nutrición superior.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Perros / Alimento / Natural Congelado</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/dog-barf-01.jpg" alt="Dieta BARF Pollo 500g" class="service-img-icon"></div>
+          <div class="service-title">Dieta BARF Pollo 500g</div>
+          <div class="service-desc">Mezcla de pollo crudo, huesos carnosos, órganos y vegetales.</div>
+          <div class="product-price">$15,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Dieta BARF Pollo 500g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/dog-barf-02.jpg" alt="Dieta BARF Res 500g" class="service-img-icon"></div>
+          <div class="service-title">Dieta BARF Res 500g</div>
+          <div class="service-desc">Nutrición completa basada en carne de res cruda de alta calidad.</div>
+          <div class="product-price">$17,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Dieta BARF Res 500g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/dog-barf-03.jpg" alt="Medallones de Pavo 1kg" class="service-img-icon"></div>
+          <div class="service-title">Medallones de Pavo 1kg</div>
+          <div class="service-desc">Porciones congeladas de pavo y vegetales, listas para descongelar y servir.</div>
+          <div class="product-price">$28,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Medallones de Pavo 1kg">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/dog-barf-04.jpg" alt="Mix de Órganos 250g" class="service-img-icon"></div>
+          <div class="service-title">Mix de Órganos 250g</div>
+          <div class="service-desc">Suplemento de vísceras para enriquecer la dieta de tu perro.</div>
+          <div class="product-price">$9,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Mix de Órganos 250g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/dog-barf-05.jpg" alt="Dieta Cocida Salmón y Papa 500g" class="service-img-icon"></div>
+          <div class="service-title">Dieta Cocida Salmón y Papa 500g</div>
+          <div class="service-desc">Alternativa a la dieta cruda, cocinada a baja temperatura para preservar nutrientes.</div>
+          <div class="product-price">$20,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Dieta Cocida Salmón y Papa 500g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/dog-barf-06.jpg" alt="Huesos Recreativos de Res" class="service-img-icon"></div>
+          <div class="service-title">Huesos Recreativos de Res</div>
+          <div class="service-desc">Huesos grandes y carnosos para limpieza dental y entretenimiento.</div>
+          <div class="product-price">$10,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Huesos Recreativos de Res">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

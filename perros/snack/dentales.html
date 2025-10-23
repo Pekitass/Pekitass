@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snacks Dentales para Perros | Pekitass</title>
+  <meta name="description" content="Snacks y premios dentales que ayudan a reducir el sarro y mantener el aliento fresco.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Perros / Snack / Dentales</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-dental-01.jpg" alt="Sticks Dentales Menta (7 unidades)" class="service-img-icon"></div>
+          <div class="service-title">Sticks Dentales Menta (7 unidades)</div>
+          <div class="service-desc">Barritas masticables con forma especial para limpiar los dientes y refrescar el aliento.</div>
+          <div class="product-price">$22,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Sticks Dentales Menta (7 unidades)">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-dental-02.jpg" alt="Hueso Dental Mediano" class="service-img-icon"></div>
+          <div class="service-title">Hueso Dental Mediano</div>
+          <div class="service-desc">Juguete y premio 2 en 1, con textura que masajea las encías.</div>
+          <div class="product-price">$15,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Hueso Dental Mediano">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-dental-03.jpg" alt="Galletas Dentales Mini (300g)" class="service-img-icon"></div>
+          <div class="service-title">Galletas Dentales Mini (300g)</div>
+          <div class="service-desc">Pequeñas galletas crujientes que ayudan a remover la placa dental.</div>
+          <div class="product-price">$18,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Galletas Dentales Mini (300g)">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-dental-04.jpg" alt="Tiras de Pollo y Clorofila" class="service-img-icon"></div>
+          <div class="service-title">Tiras de Pollo y Clorofila</div>
+          <div class="service-desc">Deliciosas tiras de pechuga de pollo con clorofila para un aliento fresco.</div>
+          <div class="product-price">$20,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Tiras de Pollo y Clorofila">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-dental-05.jpg" alt="Anillo Dental de Goma" class="service-img-icon"></div>
+          <div class="service-title">Anillo Dental de Goma</div>
+          <div class="service-desc">Juguete masticable y duradero que promueve la salud de las encías.</div>
+          <div class="product-price">$28,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Anillo Dental de Goma">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-dental-06.jpg" alt="Snack Dental para Cachorros" class="service-img-icon"></div>
+          <div class="service-title">Snack Dental para Cachorros</div>
+          <div class="service-desc">Premios suaves y fáciles de masticar para la higiene bucal de los más jóvenes.</div>
+          <div class="product-price">$19,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Snack Dental para Cachorros">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galletas para Gatos | Pekitass</title>
+  <meta name="description" content="Galletas crujientes y sabrosas para gatos. El premio perfecto para tu mascota.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Gatos / Snack / Galletas</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-snack-01.jpg" alt="Galletas Rellenas de Salmón 80g" class="service-img-icon"></div>
+          <div class="service-title">Galletas Rellenas de Salmón 80g</div>
+          <div class="service-desc">Crujientes por fuera y suaves por dentro, con un delicioso relleno de salmón.</div>
+          <div class="product-price">$12,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Galletas Rellenas de Salmón 80g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-snack-02.jpg" alt="Premios de Catnip 60g" class="service-img-icon"></div>
+          <div class="service-title">Premios de Catnip 60g</div>
+          <div class="service-desc">Galletas con hierba gatera para un momento de euforia y diversión.</div>
+          <div class="product-price">$15,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Premios de Catnip 60g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-snack-03.jpg" alt="Galletas para Control de Bolas de Pelo" class="service-img-icon"></div>
+          <div class="service-title">Galletas para Control de Bolas de Pelo</div>
+          <div class="service-desc">Ayudan a prevenir la formación de bolas de pelo gracias a su contenido de fibra.</div>
+          <div class="product-price">$14,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Galletas para Control de Bolas de Pelo">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-snack-04.jpg" alt="Premios de Pollo Liofilizado 50g" class="service-img-icon"></div>
+          <div class="service-title">Premios de Pollo Liofilizado 50g</div>
+          <div class="service-desc">Trocitos de pollo 100% natural, un premio de alto valor nutricional.</div>
+          <div class="product-price">$20,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Premios de Pollo Liofilizado 50g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-snack-05.jpg" alt="Galletas Suaves para Gatos Senior" class="service-img-icon"></div>
+          <div class="service-title">Galletas Suaves para Gatos Senior</div>
+          <div class="service-desc">Textura blanda, fácil de masticar para gatos mayores.</div>
+          <div class="product-price">$13,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Galletas Suaves para Gatos Senior">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-snack-06.jpg" alt="Mix de Mariscos Crujientes 70g" class="service-img-icon"></div>
+          <div class="service-title">Mix de Mariscos Crujientes 70g</div>
+          <div class="service-desc">Una deliciosa combinación de sabores a camarón, atún y salmón.</div>
+          <div class="product-price">$16,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Mix de Mariscos Crujientes 70g">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Areneros y Arena para Gatos | Pekitass</title>
+  <meta name="description" content="Areneros, palas y la mejor arena para la higiene de tu gato.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Gatos / Belleza e Higiene / Areneros y Arena</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/arena-01.jpg" alt="Arena Aglomerante de Bentonita 10kg" class="service-img-icon"></div>
+          <div class="service-title">Arena Aglomerante de Bentonita 10kg</div>
+          <div class="service-desc">Forma terrones sólidos fáciles de retirar y controla eficazmente los olores.</div>
+          <div class="product-price">$40,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Arena Aglomerante de Bentonita 10kg">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/arena-02.jpg" alt="Arenero Cubierto con Filtro de Carbón" class="service-img-icon"></div>
+          <div class="service-title">Arenero Cubierto con Filtro de Carbón</div>
+          <div class="service-desc">Ofrece privacidad a tu gato y reduce la dispersión de olores y arena.</div>
+          <div class="product-price">$120,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Arenero Cubierto con Filtro de Carbón">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/arena-03.jpg" alt="Arena de Sílice en Cristales 3.8L" class="service-img-icon"></div>
+          <div class="service-title">Arena de Sílice en Cristales 3.8L</div>
+          <div class="service-desc">Máxima absorción de la humedad y control de olores. Dura hasta un mes.</div>
+          <div class="product-price">$55,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Arena de Sílice en Cristales 3.8L">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/arena-04.jpg" alt="Pala Recogedora Metálica" class="service-img-icon"></div>
+          <div class="service-title">Pala Recogedora Metálica</div>
+          <div class="service-desc">Resistente y duradera, con el tamaño de ranura perfecto para no desperdiciar arena.</div>
+          <div class="product-price">$25,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Pala Recogedora Metálica">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/arena-05.jpg" alt="Tapete Atrapa Arena" class="service-img-icon"></div>
+          <div class="service-title">Tapete Atrapa Arena</div>
+          <div class="service-desc">Colócalo fuera del arenero para atrapar los granos de arena de las patas de tu gato.</div>
+          <div class="product-price">$45,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Tapete Atrapa Arena">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/arena-06.jpg" alt="Desodorante en Polvo para Arena" class="service-img-icon"></div>
+          <div class="service-title">Desodorante en Polvo para Arena</div>
+          <div class="service-desc">Neutraliza los malos olores y prolonga la vida útil de la arena.</div>
+          <div class="product-price">$20,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Desodorante en Polvo para Arena">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

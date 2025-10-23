@@ -1,0 +1,148 @@
+/* Estilos simplificados para el carrusel móvil */
+
+/* Contenedor principal del carrusel */
+.ofertas-carousel-mobile {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5px 0 35px; /* Reducido el padding superior a 5px y el inferior a 35px */
+  box-sizing: border-box;
+  min-height: 360px;
+  overflow: hidden;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* Pista del carrusel */
+.ofertas-track-mobile {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Elementos del carrusel */
+.oferta-item-mobile {
+  display: none;
+  width: 100%;
+  padding: 15px 5px; /* Reducido el padding horizontal */
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Mostrar solo el elemento activo */
+.oferta-item-mobile.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Imágenes del carrusel */
+.oferta-item-mobile img {
+  max-width: 98%; /* Aumentado para usar más ancho */
+  max-height: 290px; /* Aumentada la altura máxima de 270px a 290px */
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Botones de navegación */
+.carousel-btn-mobile {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: 1px solid #e0e0e0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Posición de los botones */
+.prev-mobile { left: 10px; }
+.next-mobile { right: 10px; }
+
+/* Puntos de navegación */
+.carousel-nav-mobile {
+  position: absolute;
+  bottom: 10px; /* Reducido de 15px a 10px */
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 0; /* Reducido de 10px a 8px */
+  margin: 0;
+  list-style: none;
+  z-index: 10;
+}
+
+/* Estilo de los puntos */
+.carousel-dot-mobile {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.carousel-dot-mobile.active {
+  background: #333;
+}
+
+/* Estilos para el título de ofertas - Heredados de main.css */
+.ofertas-title {
+  color: #0F314B;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.8rem 0 0.8rem; /* Reducido el margen superior e inferior a 0.8rem */
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding-top: 0.8rem;
+}
+
+.carousel-dot-mobile {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  padding: 0;
+}
+
+.carousel-dot-mobile.active {
+  background-color: #6D3E05;
+  transform: scale(1.3);
+}
+
+/* Asegurar que las imágenes se carguen correctamente */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Clase para la transición suave */
+.slide-transition {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}

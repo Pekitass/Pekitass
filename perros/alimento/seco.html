@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alimento Seco para Perros | Pekitass</title>
+  <meta name="description" content="La mejor selección de alimento seco para perros. Marcas como DogPro, NutriCan y más.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Perros / Alimento / Seco</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/dog-food-01.jpg" alt="DogPro Adulto Pollo 3kg" class="service-img-icon"></div>
+          <div class="service-title">DogPro Adulto Pollo 3kg</div>
+          <div class="service-desc">Alimento completo y balanceado para perros adultos de todas las razas.</div>
+          <div class="product-price">$55,000 COP</div>
+          <button class="service-btn buy-btn" data-product="DogPro Adulto Pollo 3kg">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/dog-food-02.jpg" alt="NutriCan Cachorro 1.5kg" class="service-img-icon"></div>
+          <div class="service-title">NutriCan Cachorro 1.5kg</div>
+          <div class="service-desc">Fórmula especializada para el crecimiento y desarrollo saludable de cachorros.</div>
+          <div class="product-price">$35,000 COP</div>
+          <button class="service-btn buy-btn" data-product="NutriCan Cachorro 1.5kg">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/dog-food-03.jpg" alt="Premium Lamb & Rice 12kg" class="service-img-icon"></div>
+          <div class="service-title">Premium Lamb & Rice 12kg</div>
+          <div class="service-desc">Ideal para perros con sensibilidades alimentarias, con cordero como proteína principal.</div>
+          <div class="product-price">$210,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Premium Lamb & Rice 12kg">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/dog-food-04.jpg" alt="Senior Care 7+ Años 4kg" class="service-img-icon"></div>
+          <div class="service-title">Senior Care 7+ Años 4kg</div>
+          <div class="service-desc">Nutrición adaptada para perros mayores, con antioxidantes y soporte articular.</div>
+          <div class="product-price">$75,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Senior Care 7+ Años 4kg">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/dog-food-05.jpg" alt="Active Performance 15kg" class="service-img-icon"></div>
+          <div class="service-title">Active Performance 15kg</div>
+          <div class="service-desc">Alto en proteína y grasa para perros con alta demanda energética y de trabajo.</div>
+          <div class="product-price">$250,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Active Performance 15kg">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/dog-food-06.jpg" alt="Mini Breeds Adulto 2kg" class="service-img-icon"></div>
+          <div class="service-title">Mini Breeds Adulto 2kg</div>
+          <div class="service-desc">Croqueta pequeña y sabrosa, diseñada para perros de razas pequeñas.</div>
+          <div class="product-price">$45,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Mini Breeds Adulto 2kg">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

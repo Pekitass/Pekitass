@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pelotas y Jaladores para Perros | Pekitass</title>
+  <meta name="description" content="Pelotas, cuerdas y jaladores para los juegos de buscar y tirar con tu perro.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Perros / Juguetes / Pelotas y Jaladores</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/juguete-pelota-01.jpg" alt="Pelota de Tenis para Perros (Pack x3)" class="service-img-icon"></div>
+          <div class="service-title">Pelota de Tenis para Perros (Pack x3)</div>
+          <div class="service-desc">El juguete clásico para lanzar y buscar. Resistentes y seguras para perros.</div>
+          <div class="product-price">$15,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Pelota de Tenis para Perros (Pack x3)">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/juguete-pelota-02.jpg" alt="Cuerda Trenzada con Nudo" class="service-img-icon"></div>
+          <div class="service-title">Cuerda Trenzada con Nudo</div>
+          <div class="service-desc">Ideal para juegos de tirar y aflojar, ayuda a la limpieza dental.</div>
+          <div class="product-price">$20,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Cuerda Trenzada con Nudo">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/juguete-pelota-03.jpg" alt="Lanzador de Pelotas Manual" class="service-img-icon"></div>
+          <div class="service-title">Lanzador de Pelotas Manual</div>
+          <div class="service-desc">Lanza la pelota más lejos y sin esfuerzo para que tu perro corra al máximo.</div>
+          <div class="product-price">$30,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Lanzador de Pelotas Manual">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/juguete-pelota-04.jpg" alt="Pelota de Goma con Cuerda" class="service-img-icon"></div>
+          <div class="service-title">Pelota de Goma con Cuerda</div>
+          <div class="service-desc">Combina la diversión de una pelota con la practicidad de una cuerda para lanzar.</div>
+          <div class="product-price">$25,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Pelota de Goma con Cuerda">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/juguete-pelota-05.jpg" alt="Frisbee de Tela Flexible" class="service-img-icon"></div>
+          <div class="service-title">Frisbee de Tela Flexible</div>
+          <div class="service-desc">Suave con la boca de tu perro y fácil de lanzar. Ideal para parques.</div>
+          <div class="product-price">$22,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Frisbee de Tela Flexible">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/juguete-pelota-06.jpg" alt="Jalador de Goma con Dos Asas" class="service-img-icon"></div>
+          <div class="service-title">Jalador de Goma con Dos Asas</div>
+          <div class="service-desc">Juguete resistente para compartir un divertido juego de tira y afloja.</div>
+          <div class="product-price">$35,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Jalador de Goma con Dos Asas">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

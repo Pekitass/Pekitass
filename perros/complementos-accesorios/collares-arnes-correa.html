@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collares, Arneses y Correas para Perros | Pekitass</title>
+  <meta name="description" content="La mejor selección de collares, arneses y correas para paseos seguros y con estilo.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Perros / Accesorios / Collares, Arneses y Correas</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/collar-01.jpg" alt="Collar de Nylon Reflectivo" class="service-img-icon"></div>
+          <div class="service-title">Collar de Nylon Reflectivo</div>
+          <div class="service-desc">Ajustable y con bandas reflectivas para mayor visibilidad en paseos nocturnos.</div>
+          <div class="product-price">$25,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Collar de Nylon Reflectivo">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/collar-02.jpg" alt="Arnés Antitirones Acolchado" class="service-img-icon"></div>
+          <div class="service-title">Arnés Antitirones Acolchado</div>
+          <div class="service-desc">Diseñado para reducir los tirones y ofrecer un mayor control durante el paseo.</div>
+          <div class="product-price">$65,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Arnés Antitirones Acolchado">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/collar-03.jpg" alt="Correa de Cuerda Resistente" class="service-img-icon"></div>
+          <div class="service-title">Correa de Cuerda Resistente</div>
+          <div class="service-desc">Hecha de cuerda de escalada, muy duradera y con un agarre cómodo.</div>
+          <div class="product-price">$40,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Correa de Cuerda Resistente">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/collar-04.jpg" alt="Conjunto de Collar y Correa de Cuero" class="service-img-icon"></div>
+          <div class="service-title">Conjunto de Collar y Correa de Cuero</div>
+          <div class="service-desc">Un set elegante y duradero para un look clásico y sofisticado.</div>
+          <div class="product-price">$95,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Conjunto de Collar y Correa de Cuero">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/collar-05.jpg" alt="Correa Retráctil de 5 Metros" class="service-img-icon"></div>
+          <div class="service-title">Correa Retráctil de 5 Metros</div>
+          <div class="service-desc">Dale a tu perro más libertad para explorar con esta correa retráctil y segura.</div>
+          <div class="product-price">$55,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Correa Retráctil de 5 Metros">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/collar-06.jpg" alt="Arnés para Carro con Cinturón de Seguridad" class="service-img-icon"></div>
+          <div class="service-title">Arnés para Carro con Cinturón de Seguridad</div>
+          <div class="service-desc">Mantén a tu perro seguro en el coche con este arnés especial.</div>
+          <div class="product-price">$75,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Arnés para Carro con Cinturón de Seguridad">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

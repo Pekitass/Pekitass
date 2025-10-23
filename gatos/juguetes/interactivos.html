@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juguetes Interactivos para Gatos | Pekitass</title>
+  <meta name="description" content="Juguetes y rompecabezas para gatos que estimulan su mente y combaten el aburrimiento.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Gatos / Juguetes / Interactivos</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-interactive-01.jpg" alt="Torre de Pelotas de 3 Niveles" class="service-img-icon"></div>
+          <div class="service-title">Torre de Pelotas de 3 Niveles</div>
+          <div class="service-desc">Mantiene a tu gato entretenido intentando atrapar las pelotas que giran.</div>
+          <div class="product-price">$40,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Torre de Pelotas de 3 Niveles">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-interactive-02.jpg" alt="Dispensador de Comida en Forma de Huevo" class="service-img-icon"></div>
+          <div class="service-title">Dispensador de Comida en Forma de Huevo</div>
+          <div class="service-desc">Tu gato debe jugar y mover el juguete para que libere los premios.</div>
+          <div class="product-price">$35,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Dispensador de Comida en Forma de Huevo">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-interactive-03.jpg" alt="Puntero Láser Automático" class="service-img-icon"></div>
+          <div class="service-title">Puntero Láser Automático</div>
+          <div class="service-desc">Proyecta un láser que se mueve de forma aleatoria para que tu gato lo persiga.</div>
+          <div class="product-price">$60,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Puntero Láser Automático">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-interactive-04.jpg" alt="Rompecabezas de Cajas Deslizantes" class="service-img-icon"></div>
+          <div class="service-title">Rompecabezas de Cajas Deslizantes</div>
+          <div class="service-desc">Tu gato debe deslizar las tapas para encontrar los premios escondidos.</div>
+          <div class="product-price">$55,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Rompecabezas de Cajas Deslizantes">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-interactive-05.jpg" alt="Pez Robótico que se Mueve" class="service-img-icon"></div>
+          <div class="service-title">Pez Robótico que se Mueve</div>
+          <div class="service-desc">Se activa con el tacto y se mueve como un pez real, atrayendo a tu gato.</div>
+          <div class="product-price">$45,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Pez Robótico que se Mueve">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-interactive-06.jpg" alt="Túnel Plegable con Ventanas" class="service-img-icon"></div>
+          <div class="service-title">Túnel Plegable con Ventanas</div>
+          <div class="service-desc">Un lugar para esconderse, acechar y jugar. Se guarda fácilmente.</div>
+          <div class="product-price">$50,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Túnel Plegable con Ventanas">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

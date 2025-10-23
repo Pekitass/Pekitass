@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snacks Dentales para Gatos | Pekitass</title>
+  <meta name="description" content="Snacks y premios dentales que ayudan a reducir el sarro y mantener el aliento fresco en gatos.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Gatos / Snack / Dentales</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-dental-01.jpg" alt="Premios Dentales Sabor Menta 85g" class="service-img-icon"></div>
+          <div class="service-title">Premios Dentales Sabor Menta 85g</div>
+          <div class="service-desc">Forma y textura especiales que ayudan a limpiar los dientes y refrescar el aliento.</div>
+          <div class="product-price">$18,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Premios Dentales Sabor Menta 85g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-dental-02.jpg" alt="Sticks Masticables de Pollo" class="service-img-icon"></div>
+          <div class="service-title">Sticks Masticables de Pollo</div>
+          <div class="service-desc">Ayudan a satisfacer el instinto de masticación mientras limpian los dientes.</div>
+          <div class="product-price">$15,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Sticks Masticables de Pollo">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-dental-03.jpg" alt="Galletas Dentales Crujientes 100g" class="service-img-icon"></div>
+          <div class="service-title">Galletas Dentales Crujientes 100g</div>
+          <div class="service-desc">Pequeñas galletas que ayudan a remover la placa dental con cada mordida.</div>
+          <div class="product-price">$16,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Galletas Dentales Crujientes 100g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-dental-04.jpg" alt="Aditivo para el Agua Bucal" class="service-img-icon"></div>
+          <div class="service-title">Aditivo para el Agua Bucal</div>
+          <div class="service-desc">Una solución fácil para combatir el mal aliento y la placa, solo añade al agua.</div>
+          <div class="product-price">$35,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Aditivo para el Agua Bucal">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-dental-05.jpg" alt="Juguete de Goma Rellenable" class="service-img-icon"></div>
+          <div class="service-title">Juguete de Goma Rellenable</div>
+          <div class="service-desc">Puedes rellenarlo con pasta dental para gatos para una limpieza divertida.</div>
+          <div class="product-price">$25,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Juguete de Goma Rellenable">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-dental-06.jpg" alt="Snacks Dentales para Gatitos" class="service-img-icon"></div>
+          <div class="service-title">Snacks Dentales para Gatitos</div>
+          <div class="service-desc">Premios suaves y con una forma especial para la higiene bucal de los más jóvenes.</div>
+          <div class="product-price">$17,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Snacks Dentales para Gatitos">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

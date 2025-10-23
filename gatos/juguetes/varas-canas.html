@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varas y Cañas para Gatos | Pekitass</title>
+  <meta name="description" content="Varitas y cañas con plumas, cintas y muñecos para jugar con tu gato.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Gatos / Juguetes / Varas y Cañas</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-vara-01.jpg" alt="Vara con Plumas de Colores" class="service-img-icon"></div>
+          <div class="service-title">Vara con Plumas de Colores</div>
+          <div class="service-desc">Un clásico irresistible que despierta el instinto de caza de tu gato.</div>
+          <div class="product-price">$15,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Vara con Plumas de Colores">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-vara-02.jpg" alt="Caña de Pescar con Ratón de Juguete" class="service-img-icon"></div>
+          <div class="service-title">Caña de Pescar con Ratón de Juguete</div>
+          <div class="service-desc">Larga y flexible, perfecta para juegos interactivos a distancia.</div>
+          <div class="product-price">$20,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Caña de Pescar con Ratón de Juguete">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-vara-03.jpg" alt="Vara con Cinta Larga y Cascabel" class="service-img-icon"></div>
+          <div class="service-title">Vara con Cinta Larga y Cascabel</div>
+          <div class="service-desc">El movimiento de la cinta y el sonido del cascabel lo volverán loco.</div>
+          <div class="product-price">$18,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Vara con Cinta Larga y Cascabel">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-vara-04.jpg" alt="Caña Retráctil con Pluma Intercambiable" class="service-img-icon"></div>
+          <div class="service-title">Caña Retráctil con Pluma Intercambiable</div>
+          <div class="service-desc">Ajusta el largo de la caña y cambia el juguete para variar la diversión.</div>
+          <div class="product-price">$30,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Caña Retráctil con Pluma Intercambiable">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-vara-05.jpg" alt="Vara de Madera con Gusano de Tela" class="service-img-icon"></div>
+          <div class="service-title">Vara de Madera con Gusano de Tela</div>
+          <div class="service-desc">Un juguete resistente y natural para horas de juego.</div>
+          <div class="product-price">$22,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Vara de Madera con Gusano de Tela">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-vara-06.jpg" alt="Set de 3 Varas con Diferentes Juguetes" class="service-img-icon"></div>
+          <div class="service-title">Set de 3 Varas con Diferentes Juguetes</div>
+          <div class="service-desc">Incluye una vara con plumas, una con ratón y una con cascabel.</div>
+          <div class="product-price">$40,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Set de 3 Varas con Diferentes Juguetes">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

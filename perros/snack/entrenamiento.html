@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snacks de Entrenamiento para Perros | Pekitass</title>
+  <meta name="description" content="Premios pequeños y bajos en calorías, perfectos para el adiestramiento y refuerzo positivo.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Perros / Snack / Entrenamiento</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-training-01.jpg" alt="Bocados de Hígado Liofilizado 80g" class="service-img-icon"></div>
+          <div class="service-title">Bocados de Hígado Liofilizado 80g</div>
+          <div class="service-desc">Premio de alto valor, 100% natural y muy apetecido.</div>
+          <div class="product-price">$25,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Bocados de Hígado Liofilizado 80g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-training-02.jpg" alt="Mini Salchichas de Pollo 150g" class="service-img-icon"></div>
+          <div class="service-title">Mini Salchichas de Pollo 150g</div>
+          <div class="service-desc">Pequeños trozos de salchicha, ideales para premiar la obediencia.</div>
+          <div class="product-price">$14,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Mini Salchichas de Pollo 150g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-training-03.jpg" alt="Premios Suaves Sabor a Tocineta 200g" class="service-img-icon"></div>
+          <div class="service-title">Premios Suaves Sabor a Tocineta 200g</div>
+          <div class="service-desc">Textura blanda y un sabor que les encanta, bajos en grasa.</div>
+          <div class="product-price">$16,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Premios Suaves Sabor a Tocineta 200g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-training-04.jpg" alt="Cubitos de Carne de Res 100g" class="service-img-icon"></div>
+          <div class="service-title">Cubitos de Carne de Res 100g</div>
+          <div class="service-desc">Trozos de carne deshidratada, un premio natural y saludable.</div>
+          <div class="product-price">$20,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Cubitos de Carne de Res 100g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-training-05.jpg" alt="Galletas Pequeñas de Cereal Mix 400g" class="service-img-icon"></div>
+          <div class="service-title">Galletas Pequeñas de Cereal Mix 400g</div>
+          <div class="service-desc">Galletitas de diferentes formas y sabores para mantenerlo motivado.</div>
+          <div class="product-price">$15,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Galletas Pequeñas de Cereal Mix 400g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-training-06.jpg" alt="Premios de Salmón para Piel y Pelaje" class="service-img-icon"></div>
+          <div class="service-title">Premios de Salmón para Piel y Pelaje</div>
+          <div class="service-desc">Enriquecidos con Omega 3 y 6 para un pelaje brillante y una piel sana.</div>
+          <div class="product-price">$22,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Premios de Salmón para Piel y Pelaje">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

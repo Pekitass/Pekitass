@@ -1,0 +1,1196 @@
+.service-btn {
+  text-decoration: none !important;
+}
+@media (max-width: 700px) {
+  .service-details img {
+    width: 100%;
+    max-width: 97vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(10,35,66,0.10);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    box-sizing: border-box;
+  }
+}
+/* --- Ajuste visual SOLO para móviles en páginas sin contenedores (service-details) --- */
+@media (max-width: 700px) {
+  .service-details h2 {
+    text-align: center !important;
+    font-size: 1.45rem !important;
+    margin-bottom: 1.1rem !important;
+  }
+  .service-details p, .service-details ul {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: 1.01rem !important;
+    max-width: 98vw !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+}
+/* --- Ajustes responsive SOLO para subpáginas con body.subpage --- */
+@media (max-width: 700px) {
+  body.subpage .services-list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  body.subpage .service {
+    height: auto !important;
+    min-height: unset !important;
+    max-height: unset !important;
+    padding-bottom: 1.5rem;
+  }
+  body.subpage .service-title {
+    max-height: unset !important;
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  body.subpage .service-desc {
+    max-height: unset !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
+    font-size: 1.02rem;
+    margin-bottom: 0.5rem;
+  }
+
+}
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .service-icon {
+    min-height: 240px !important;
+    max-height: 280px !important;
+    height: 240px !important;
+    align-items: stretch !important;
+  }
+  .service-img-icon {
+    height: 240px !important;
+    max-height: 280px !important;
+    width: 100% !important;
+    object-fit: contain !important;
+    border-radius: 16px 16px 0 0 !important;
+    background: #fff;
+    display: block;
+  }
+}
+
+/*
+  PC Soluciones - Estilos principales
+  Paleta: #0a2342 (azul oscuro), #185adb (azul prpcsolincipal), #f6f9ff (fondo), #ffffff (blanco), #1e2746 (texto)
+  Fuente: 'Segoe UI', Arial, sans-serif
+*/
+
+:root {
+  --color-bg: #f6f9ff;
+  --color-primary: #185adb;
+  --color-dark: #000000;
+  --color-white: #ffffff;
+  --color-text: #1e2746;
+  --color-accent: #185adb;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main, .main-content {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+/* --- START: New Navigation Bar Styles --- */
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0; /* Remove previous padding */
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  height: 70px; /* Adjusted height */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logo-icon,
+.logo-letras {
+  height: 100%;
+  width: auto;
+  max-height: 60px;
+  object-fit: contain;
+  display: block;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem; /* Adjusted gap */
+  list-style: none;
+  height: 100%;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav a.nav-link {
+  color: #1e2746; /* Black text */
+  text-decoration: none;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.dropdown.open > a.nav-link {
+  background-color: #f0f0f0; /* Highlight for active category */
+  color: #6D3E05;
+}
+
+/* Mega Menu Styles */
+.dropdown-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 70px; /* Position below header */
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  z-index: 999;
+  border-radius: 0; /* No rounded corners */
+  padding: 2rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.dropdown.open > .dropdown-menu {
+  display: block; /* Show on click */
+}
+
+.mega-menu-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mega-menu-column h3 {
+  font-size: 1.1rem;
+  color: #6D3E05;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.5rem;
+}
+
+.mega-menu-column ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.mega-menu-column ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mega-menu-column ul li a:hover {
+  color: #6D3E05;
+}
+
+/* --- END: New Navigation Bar Styles --- */
+
+/* --- Mobile Navigation --- */
+#mobile-nav {
+  display: none;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 100%;
+  max-height: calc(100vh - 56px);
+  background: #fff;
+  z-index: 1000;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  border-top: 1px solid #e0e0e0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 0;
+  margin: 0;
+}
+
+#mobile-nav.active {
+  display: block;
+}
+
+#mobile-nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#mobile-nav li {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block !important;
+}
+
+#mobile-nav .menu-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 14px 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fff;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+#mobile-nav .menu-link:hover,
+#mobile-nav .has-submenu.open > .menu-link {
+  background: #f8f8f8;
+  color: #6D3E05;
+}
+
+#mobile-nav .has-submenu > .menu-link::after {
+  content: '▶';
+  font-size: 10px;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+  color: #666;
+}
+
+#mobile-nav .has-submenu.open > .menu-link::after {
+  transform: rotate(90deg);
+  color: #6D3E05;
+}
+
+#mobile-nav .submenu {
+  display: none;
+  width: 100%;
+  background: #f8f8f8;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile-nav .has-submenu.open > .submenu {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+#mobile-nav .submenu .menu-link {
+  padding-left: 30px;
+  background: #f8f8f8;
+  font-size: 15px;
+  color: #555;
+}
+
+#mobile-nav .submenu .menu-link:hover {
+  background: #f0f0f0;
+  color: #6D3E05;
+}
+
+#mobile-nav .submenu .submenu .menu-link {
+  padding-left: 45px;
+  background: #f0f0f0;
+  font-size: 14px;
+}
+
+#mobile-nav .submenu .submenu .submenu .menu-link {
+  padding-left: 60px;
+  background: #e8e8e8;
+  font-size: 13px;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+  to { 
+    opacity: 1;
+    max-height: 1000px;
+  }
+}
+
+/* Hide desktop nav on mobile */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  
+  .menu-toggle {
+    display: block !important;
+  }
+  
+  /* Reset any conflicting styles */
+  #mobile-nav .submenu {
+    position: static !important;
+    display: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    min-width: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  
+  #mobile-nav .has-submenu.open > .submenu {
+    display: block !important;
+    position: static !important;
+    transform: none !important;
+  }
+  
+  /* Forzar que los elementos de menú ocupen todo el ancho */
+  #mobile-nav li {
+    float: none !important;
+    display: block !important;
+    width: 100% !important;
+  }
+  
+  /* Asegurar que los enlaces ocupen todo el ancho */
+  #mobile-nav .menu-link {
+    display: flex !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+}
+/* --- End Mobile Navigation --- */
+
+@media (max-width: 768px) {
+  /* --- General Mobile Layout --- */
+  .navbar {
+    height: 56px;
+    padding: 0 1rem;
+  }
+
+  .logo-letras {
+    display: none; /* Hide text logo on mobile */
+  }
+
+  /* --- Toggle Visibility of Navigations --- */
+  .desktop-nav {
+    display: none !important; /* Force hide desktop menu on mobile */
+  }
+
+  .menu-toggle {
+    display: block; /* Show hamburger icon */
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    z-index: 1200;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    margin: 5px 0;
+    background: #000000;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  /* NO X transform */
+  .menu-toggle.active span {
+    background: #6D3E05; /* Change color when active */
+  }
+}
+
+.hero {
+  background: linear-gradient(90deg, var(--color-primary) 60%, var(--color-bg) 100%);
+  color: var(--color-white);
+  padding: 6rem 1.5rem 5rem 1.5rem; /* Aumenta el alto visible */
+  text-align: center;
+  background-image:
+    linear-gradient(rgba(150, 76, 3, 0.522), rgba(10,35,66,0.60)), /* Capa de transparencia */
+    url('../img/banner_principal.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.35rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(10,35,66,0.25), 0 1px 0 #185adb;
+  letter-spacing: 0.01em;
+}
+
+.cta-btn {
+  background: var(--color-white);
+  color: #6D3E05;
+  border: none;
+  padding: 0.9rem 2.2rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(24,90,219,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+
+.cta-btn:hover {
+  background: #E2710A;
+  color: var(--color-white);
+}
+
+.services {
+  max-width: 1100px;
+  margin: 1.5rem auto 5rem; /* Aumentado el margen inferior de 2rem a 5rem */
+  padding: 0 1.5rem;
+}
+
+/* Ajustes para la sección de servicios */
+#servicios {
+  scroll-margin-top: 90px; /* Ajustado para navegación desde otras páginas */
+  padding-top: 1rem;
+}
+
+.services-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color-dark);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+/* Estilo específico para el título de ofertas en la página principal */
+#ofertas .ofertas-title {
+  color: #000000; /* Negro puro */
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(320px, 1fr));
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+.service {
+  background: var(--color-white);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(10,35,66,0.06);
+  padding: 0 0 1.5rem 0;
+  text-align: center;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  min-height: 410px;
+  height: auto;
+  position: relative;
+}
+
+.service:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(24,90,219,0.10);
+}
+
+.service-icon {
+  width: 100%;
+  min-height: 200px !important;
+  max-height: 260px !important;
+  height: 200px !important;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0 !important;
+  background: none !important;
+  margin-bottom: 0;
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background: #fff;
+  padding: 0;
+  /* Fuerza altura fija para todas las imágenes */
+  flex-shrink: 0;
+}
+
+.service-img-icon {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 300px !important;
+  object-fit: cover !important;
+  display: block !important;
+  border-radius: 16px 16px 0 0 !important;
+  background: none !important;
+}
+
+.service-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  margin-top: 1.2rem;
+  position: relative;
+  z-index: 1;
+  max-height: 3.4em; /* Permite hasta 2 líneas completas */
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
+}
+
+.service-desc {
+  font-size: 0.98rem;
+  color: #444b5a;
+  max-height: 4.4em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+@media (min-width: 769px) {
+  .service-desc {
+    font-size: 0.93rem;
+  }
+}
+
+.service-btn {
+  display: inline-block;
+  margin-top: 1.1rem;
+  padding: 0.7rem 2.1rem;
+  background: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(10,35,66,0.10);
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+  letter-spacing: 0.01em;
+}
+
+.service-btn:hover, .service-btn:focus {
+  background: #000000ab;
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Ajustes para la sección de contacto */
+#contacto {
+  scroll-margin-top: 90px; /* Mismo valor que para la sección de servicios */
+  padding-top: 1rem;
+}
+
+/* Contacto con QR */
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 2.5rem 1.5rem 2rem;
+  border-radius: 18px;
+  max-width: 900px;
+  box-shadow: 0 2px 12px rgba(10,35,66,0.07);
+  margin: 0 auto 3rem;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-flex {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  min-height: 400px;
+  height: 100%;
+}
+
+.contact-info {
+  flex: 1 1 320px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Centra el formulario verticalmente */
+}
+
+.contact-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  flex: 1 1 220px;
+}
+
+.qr-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(24,90,219,0.10);
+  margin-bottom: 0.5rem;
+}
+
+.qr-caption {
+  font-size: 0.98rem;
+  color: #444b5a;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+.contact-title {
+  text-align: center;
+  color: var(--color-dark);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-bottom: 1.5rem;
+  width: 100%; 
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: none;
+}
+
+.contact-form textarea {
+  min-height: 90px;
+}
+
+/* Unifica estilos para ambos botones */
+.whatsapp-btn,
+.contact-form button {
+  width: 100%;
+  min-height: 60px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 2rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+  gap: 0.7rem;
+}
+
+.contact-form button {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+.contact-form button:hover {
+  background: #000000ab;
+}
+
+
+.whatsapp-btn {
+  background: #25d366;
+  color: #fff;
+  margin: 0 0 1.2rem 0;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+
+footer {
+  background: var(--color-dark);
+  color: var(--color-white);
+  padding: 2rem 1.5rem 1.2rem 1.5rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem; /* Espacio entre íconos */
+  background: var(--color-dark);
+  padding: 1rem 0;
+}
+
+.footer-social a {
+  color: var(--color-white);
+  margin: 0 0.7rem;
+  font-size: 1.3rem;
+  transition: color 0.2s;
+}
+
+.footer-social a:hover {
+  color: var(--color-accent);
+}
+
+.footer-social .footer-icon {
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  vertical-align: middle;
+  transition: transform 0.2s;
+  background: none;
+  border-radius: 8px;
+}
+.footer-social a:hover .footer-icon {
+  transform: scale(1.15);
+}
+
+@media (max-width: 900px) {
+  .contact-flex {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+  .contact-qr {
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding: 3.5rem 1rem 3rem 1rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .contact-section {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  }
+  .qr-img {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+
+/* --- Mobile Navigation --- */
+#mobile-nav .has-submenu.open > .submenu {
+  display: block;
+}
+/* --- END: Mobile Navigation --- */
+
+
+/* Estilos para el carrusel de ofertas */
+.ofertas-section {
+  padding: 2rem 0;
+  background-color: #f9f9f9;
+  margin: 0;
+  position: relative;
+}
+
+.ofertas-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  top: 0; /* Eliminado el desplazamiento negativo */
+  padding-top: 0; /* Eliminado el padding superior */
+}
+
+/* Estilos para el título de ofertas (ahora combinado con .services-title) */
+.ofertas-title {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.ofertas-title:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #6D3E05;
+  margin: 8px auto 0; /* Ajuste fino del espaciado */
+}
+
+.ofertas-carousel {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0 20px; /* Reducido el padding inferior de 40px a 20px */
+  width: 100%;
+  margin: 0 auto; /* Centrado */
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding-left: 15px; /* Asegurar espacio en el borde izquierdo */
+}
+
+.ofertas-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+  padding: 0 15px 0 15px; /* Padding simétrico */
+  box-sizing: border-box;
+  width: 100%;
+  gap: 10px; /* Espacio entre elementos */
+  margin: 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  overflow: visible;
+}
+
+.oferta-item {
+  flex: 0 0 calc(33.333% - 6.6667px);
+  min-width: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  margin: 0;
+  transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  /* Asegurar que las imágenes se escalen correctamente */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Asegurar que el primer elemento de cada grupo no tenga margen izquierdo */
+.oferta-item:first-child,
+.oferta-item:nth-child(3n+1) {
+  margin-left: 0; /* Eliminamos el margen izquierdo */
+  position: relative;
+  overflow: visible; /* Asegurar que el contenido no se recorte */
+}
+
+.oferta-item:hover {
+  transform: translateY(-5px);
+}
+
+.oferta-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 12px;
+}
+
+.carousel-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: 2px solid #fff;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.carousel-dot.active {
+  background-color: #6D3E05;
+  transform: scale(1.2);
+}
+
+/* Botones de navegación */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #333;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+.carousel-btn:hover {
+  background: #6D3E05;
+  color: white;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+  .ofertas-track {
+    padding: 0 20px;
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 -10px;
+    padding-bottom: 10px; /* Espacio adicional para el scroll en móviles */
+  }
+  
+  .oferta-item {
+    flex: 0 0 calc(100% - 30px);
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    margin: 0 5px;
+  }
+  
+  .ofertas-title {
+    font-size: 1.5rem;
+  }
+  
+  .carousel-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+}
+
+/* Responsive visibility classes */
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  
+  .mobile-only {
+    display: block;
+  }
+  
+  /* Hide desktop carousel on mobile */
+  .ofertas-carousel {
+    display: none;
+  }
+  
+  /* Mobile carousel styles */
+  .ofertas-carousel-mobile {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos específicos para el carrusel móvil */
+  .ofertas-track-mobile {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+    padding: 10px 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 200px; /* Altura mínima para evitar colapso */
+  }
+  
+  .oferta-item-mobile {
+    flex: 0 0 100%;
+    min-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px; /* Asegurar altura mínima */
+  }
+  
+  .oferta-item-mobile a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 180px;
+    overflow: visible;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .oferta-item-mobile img {
+    max-width: 100%;
+    max-height: 180px;
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 4px;
+    opacity: 1 !important;
+  }
+  
+  .carousel-btn-mobile {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .carousel-btn-mobile.prev-mobile {
+    left: 15px;
+  }
+  
+  .carousel-btn-mobile.next-mobile {
+    right: 15px;
+  }
+  
+  .carousel-btn-mobile:hover {
+    background: #6D3E05;
+    color: white;
+  }
+  
+  .carousel-nav-mobile {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  
+  .carousel-dot-mobile {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d1d1d1;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .carousel-dot-mobile.active {
+    background-color: #0056b3;
+    transform: scale(1.2);
+  }
+  
+  #ofertas .ofertas-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #000000; /* Negro puro para móviles */
+  }
+}

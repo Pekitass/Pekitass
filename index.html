@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Pekitass | Todo para tu Mascota</title>
+  <meta name="description" content="Encuentra el mejor alimento, snacks, juguetes y accesorios para perros y gatos. Calidad y buen precio para tu peludo.">
+  <link rel="icon" type="image/png" href="assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Puedes agregar favicon aquí -->
+</head>
+<body>
+  <!-- Encabezado y navegación -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo" id="logo-home">
+        <img src="assets/img/pekitass-logo.png" alt="Pekitass Logo" class="logo-icon" />
+        <img src="assets/img/pekitass-letras.png" alt="Pekitass" class="logo-letras" />
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="desktop-nav">
+        <ul id="main-menu">
+          <li class="dropdown">
+              <a href="/perros/" class="nav-link dropdown-toggle">Perros</a>
+              <div class="dropdown-menu">
+                <div class="mega-menu-content">
+                  <div class="mega-menu-column">
+                    <h3>Alimento</h3>
+                    <ul>
+                      <li><a href="/perros/alimento/seco.html">Seco</a></li>
+                      <li><a href="/perros/alimento/humedo.html">Húmedo</a></li>
+                      <li><a href="/perros/alimento/natural-congelado.html">Natural Congelado</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h3>Snacks</h3>
+                    <ul>
+                      <li><a href="/perros/snack/galletas.html">Galletas</a></li>
+                      <li><a href="/perros/snack/huesos.html">Huesos</a></li>
+                      <li><a href="/perros/snack/dentales.html">Dentales</a></li>
+                      <li><a href="/perros/snack/entrenamiento.html">Entrenamiento</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h3>Juguetes</h3>
+                    <ul>
+                      <li><a href="/perros/juguetes/interactivos.html">Interactivos</a></li>
+                      <li><a href="/perros/juguetes/duros.html">Duros</a></li>
+                      <li><a href="/perros/juguetes/pelotas-jaladores.html">Pelotas y Jaladores</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h3>Belleza e Higiene</h3>
+                    <ul>
+                      <li><a href="/perros/belleza-higiene/bano-aseo.html">Baño y Aseo</a></li>
+                      <li><a href="/perros/belleza-higiene/peluqueria.html">Peluquería</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h3>Complementos y Accesorios</h3>
+                    <ul>
+                      <li><a href="/perros/complementos-accesorios/ropa-otros.html">Ropa y Otros</a></li>
+                      <li><a href="/perros/complementos-accesorios/camas-casas.html">Camas y Casas</a></li>
+                      <li><a href="/perros/complementos-accesorios/collares-arnes-correa.html">Collares, Arnés y Correa</a></li>
+                      <li><a href="/perros/complementos-accesorios/comedores-bebederos.html">Comederos y Bebederos</a></li>
+                      <li><a href="/perros/complementos-accesorios/transporte.html">Transporte</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="/gatos/" class="nav-link dropdown-toggle">Gatos</a>
+              <div class="dropdown-menu">
+                <div class="mega-menu-content">
+                  <div class="mega-menu-column">
+                    <h3>Alimento</h3>
+                    <ul>
+                      <li><a href="/gatos/alimento/seco.html">Seco</a></li>
+                      <li><a href="/gatos/alimento/humedo.html">Húmedo</a></li>
+                      <li><a href="/gatos/alimento/natural-congelado.html">Natural Congelado</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h3>Snacks</h3>
+                    <ul>
+                      <li><a href="/gatos/snack/galletas.html">Galletas</a></li>
+                      <li><a href="/gatos/snack/dentales.html">Dentales</a></li>
+                      <li><a href="/gatos/snack/entrenamiento.html">Entrenamiento</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h3>Juguetes</h3>
+                    <ul>
+                      <li><a href="/gatos/juguetes/varas-canas.html">Varas y Cañas</a></li>
+                      <li><a href="/gatos/juguetes/interactivos.html">Interactivos</a></li>
+                      <li><a href="/gatos/juguetes/pelotas-cabuya.html">Pelotas y Cabuya</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h3>Belleza e Higiene</h3>
+                    <ul>
+                      <li><a href="/gatos/belleza-higiene/bano-aseo.html">Baño y Aseo</a></li>
+                      <li><a href="/gatos/belleza-higiene/peluqueria.html">Peluquería</a></li>
+                      <li><a href="/gatos/belleza-higiene/arenero-arena.html">Areneros y Arena</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h3>Complementos y Accesorios</h3>
+                    <ul>
+                      <li><a href="/gatos/complementos-accesorios/camas-casas-gimnasios.html">Camas, Casas y Gimnasios</a></li>
+                      <li><a href="/gatos/complementos-accesorios/comedores-bebederos.html">Comederos y Bebederos</a></li>
+                      <li><a href="/gatos/complementos-accesorios/collares-arnes-correa.html">Collares, Arnés y Correa</a></li>
+                      <li><a href="/gatos/complementos-accesorios/transporte.html">Transporte</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          <li><a href="/ofertas/" class="nav-link">Ofertas</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav id="mobile-nav">
+    <ul>
+      <li class="has-submenu">
+        <a href="/perros/" class="menu-link">Perros</a>
+        <ul class="submenu">
+          <li class="has-submenu">
+            <a href="#" class="menu-link">Alimento</a>
+            <ul class="submenu">
+              <li><a href="/perros/alimento/seco.html" class="menu-link">Seco</a></li>
+              <li><a href="/perros/alimento/humedo.html" class="menu-link">Húmedo</a></li>
+              <li><a href="/perros/alimento/natural-congelado.html" class="menu-link">Natural Congelado</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#" class="menu-link">Snacks</a>
+            <ul class="submenu">
+              <li><a href="/perros/snack/galletas.html" class="menu-link">Galletas</a></li>
+              <li><a href="/perros/snack/huesos.html" class="menu-link">Huesos</a></li>
+              <li><a href="/perros/snack/dentales.html" class="menu-link">Dentales</a></li>
+              <li><a href="/perros/snack/entrenamiento.html" class="menu-link">Entrenamiento</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#" class="menu-link">Juguetes</a>
+            <ul class="submenu">
+              <li><a href="/perros/juguetes/interactivos.html" class="menu-link">Interactivos</a></li>
+              <li><a href="/perros/juguetes/duros.html" class="menu-link">Duros</a></li>
+              <li><a href="/perros/juguetes/pelotas-jaladores.html" class="menu-link">Pelotas y Jaladores</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#" class="menu-link">Belleza e Higiene</a>
+            <ul class="submenu">
+              <li><a href="/perros/belleza-higiene/bano-aseo.html" class="menu-link">Baño y Aseo</a></li>
+              <li><a href="/perros/belleza-higiene/peluqueria.html" class="menu-link">Peluquería</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#" class="menu-link">Complementos y Accesorios</a>
+            <ul class="submenu">
+              <li><a href="/perros/complementos-accesorios/ropa-otros.html" class="menu-link">Ropa y Otros</a></li>
+              <li><a href="/perros/complementos-accesorios/camas-casas.html" class="menu-link">Camas y Casas</a></li>
+              <li><a href="/perros/complementos-accesorios/collares-arnes-correa.html" class="menu-link">Collares, Arnés y Correa</a></li>
+              <li><a href="/perros/complementos-accesorios/comedores-bebederos.html" class="menu-link">Comederos y Bebederos</a></li>
+              <li><a href="/perros/complementos-accesorios/transporte.html" class="menu-link">Transporte</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <a href="/gatos/" class="menu-link">Gatos</a>
+        <ul class="submenu">
+          <li class="has-submenu">
+            <a href="#" class="menu-link">Alimento</a>
+            <ul class="submenu">
+              <li><a href="/gatos/alimento/seco.html" class="menu-link">Seco</a></li>
+              <li><a href="/gatos/alimento/humedo.html" class="menu-link">Húmedo</a></li>
+              <li><a href="/gatos/alimento/natural-congelado.html" class="menu-link">Natural Congelado</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#" class="menu-link">Snacks</a>
+            <ul class="submenu">
+              <li><a href="/gatos/snack/galletas.html" class="menu-link">Galletas</a></li>
+              <li><a href="/gatos/snack/dentales.html" class="menu-link">Dentales</a></li>
+              <li><a href="/gatos/snack/entrenamiento.html" class="menu-link">Entrenamiento</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#" class="menu-link">Juguetes</a>
+            <ul class="submenu">
+              <li><a href="/gatos/juguetes/varas-canas.html" class="menu-link">Varas y Cañas</a></li>
+              <li><a href="/gatos/juguetes/interactivos.html" class="menu-link">Interactivos</a></li>
+              <li><a href="/gatos/juguetes/pelotas-cabuya.html" class="menu-link">Pelotas y Cabuya</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#" class="menu-link">Belleza e Higiene</a>
+            <ul class="submenu">
+              <li><a href="/gatos/belleza-higiene/bano-aseo.html" class="menu-link">Baño y Aseo</a></li>
+              <li><a href="/gatos/belleza-higiene/peluqueria.html" class="menu-link">Peluquería</a></li>
+              <li><a href="/gatos/belleza-higiene/arenero-arena.html" class="menu-link">Areneros y Arena</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#" class="menu-link">Complementos y Accesorios</a>
+            <ul class="submenu">
+              <li><a href="/gatos/complementos-accesorios/camas-casas-gimnasios.html" class="menu-link">Camas, Casas y Gimnasios</a></li>
+              <li><a href="/gatos/complementos-accesorios/comedores-bebederos.html" class="menu-link">Comederos y Bebederos</a></li>
+              <li><a href="/gatos/complementos-accesorios/collares-arnes-correa.html" class="menu-link">Collares, Arnés y Correa</a></li>
+              <li><a href="/gatos/complementos-accesorios/transporte.html" class="menu-link">Transporte</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="/ofertas/" class="menu-link">Ofertas</a></li>
+      <li><a href="#contacto" class="menu-link">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero / Presentación -->
+  <main>
+    <section id="inicio" class="hero">
+      <h1>Todo para tu peludo: alimento, juguetes y más</h1>
+      <p>La mejor calidad en productos para perros y gatos. ¡Tu mascota feliz, tú feliz!</p>
+      <a href="https://wa.link/dtzewy" class="cta-btn" target="_blank">Compra por WhatsApp</a>
+    </section>
+
+    <!-- Sección de Ofertas Especiales -->
+    <!-- Sección de Ofertas -->
+    <section id="ofertas">
+      <!-- Ofertas Especiales - Desktop -->
+      <section class="ofertas-section desktop-only">
+        <h2 class="ofertas-title">Ofertas Especiales</h2>
+        <div class="ofertas-carousel">
+          <button class="carousel-btn prev" aria-label="Oferta anterior">❮</button>
+          <div class="ofertas-track">
+            <!-- Oferta 1 -->
+            <div class="oferta-item">
+              <a href="#" class="oferta-link">
+                <img src="assets/img/oferta1.png" alt="Diademas Logitech G335">
+              </a>
+            </div>
+            <!-- Oferta 2 -->
+            <div class="oferta-item">
+              <a href="#" class="oferta-link">
+                <img src="assets/img/oferta2.png" alt="Diademas Logitech G435">
+              </a>
+            </div>
+            <!-- Oferta 3 -->
+            <div class="oferta-item">
+              <a href="#" class="oferta-link">
+                <img src="assets/img/oferta3.png" alt="Diademas Logitech G733">
+              </a>
+            </div>
+            <!-- Oferta 4 -->
+            <div class="oferta-item">
+              <a href="#" class="oferta-link">
+                <img src="assets/img/oferta4.png" alt="Fuente de poder 600W">
+              </a>
+            </div>
+            <!-- Oferta 5 -->
+            <div class="oferta-item">
+              <a href="#" class="oferta-link">
+                <img src="assets/img/oferta5.png" alt="Fuente de poder 700W">
+              </a>
+            </div>
+            <!-- Oferta 6 -->
+            <div class="oferta-item">
+              <a href="#" class="oferta-link">
+                <img src="assets/img/oferta6.png" alt="Fuente de poder 750W">
+              </a>
+            </div>
+            <!-- Oferta 7 -->
+            <div class="oferta-item">
+              <a href="#" class="oferta-link">
+                <img src="assets/img/oferta7.png" alt="Portatiles Acer">
+              </a>
+            </div>
+            <!-- Oferta 8 -->
+            <div class="oferta-item">
+              <a href="#" class="oferta-link">
+                <img src="assets/img/oferta8.png" alt="Portatil Dell">
+              </a>
+            </div>
+            <!-- Oferta 9 -->
+            <div class="oferta-item">
+              <a href="#" class="oferta-link">
+                <img src="assets/img/oferta9.png" alt="Portatiles Asus Ryzen">
+              </a>
+            </div>
+          </div>
+          <button class="carousel-btn next" aria-label="Siguiente oferta">❯</button>
+          <div class="carousel-nav">
+            <span class="carousel-dot active" data-index="0" aria-label="Ir a oferta 1"></span>
+            <span class="carousel-dot" data-index="1" aria-label="Ir a oferta 2"></span>
+            <span class="carousel-dot" data-index="2" aria-label="Ir a oferta 3"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Enlace al archivo CSS específico para el carrusel móvil -->
+      <link rel="stylesheet" href="assets/css/ofertas-mobile-fixed.css">
+      
+      <!-- Ofertas Especiales - Mobile -->
+      <section class="ofertas-section mobile-only">
+        <h2 class="ofertas-title">Ofertas Especiales</h2>
+        <div class="ofertas-carousel-mobile">
+          <button class="carousel-btn-mobile prev-mobile" aria-label="Oferta anterior">❮</button>
+          <div class="ofertas-track-mobile">
+            <!-- Oferta 1 -->
+            <div class="oferta-item-mobile">
+              <a href="#" class="oferta-link">
+                <img src="assets/img/oferta1.png" alt="Diademas Logitech G335" loading="eager">
+              </a>
+            </div>
+            <!-- Oferta 2 -->
+            <div class="oferta-item-mobile">
+              <a href="#" class="oferta-link">
+                <img src="assets/img/oferta2.png" alt="Diademas Logitech G435" loading="eager">
+              </a>
+            </div>
+            <!-- Oferta 3 -->
+            <div class="oferta-item-mobile">
+              <a href="#" class="oferta-link">
+                <img src="assets/img/oferta3.png" alt="Diademas Logitech G733" loading="eager">
+              </a>
+            </div>
+            <!-- Oferta 4 -->
+            <div class="oferta-item-mobile">
+              <a href="#" class="oferta-link">
+                <img src="assets/img/oferta4.png" alt="Fuente de poder 600W" loading="eager">
+              </a>
+            </div>
+            <!-- Oferta 5 -->
+            <div class="oferta-item-mobile">
+              <a href="#" class="oferta-link">
+                <img src="assets/img/oferta5.png" alt="Fuente de poder 700W" loading="eager">
+              </a>
+            </div>
+            <!-- Oferta 6 -->
+            <div class="oferta-item-mobile">
+              <a href="#" class="oferta-link">
+                <img src="assets/img/oferta6.png" alt="Fuente de poder 750W" loading="eager">
+              </a>
+            </div>
+            <!-- Oferta 7 -->
+            <div class="oferta-item-mobile">
+              <a href="#" class="oferta-link">
+                <img src="assets/img/oferta7.png" alt="Portatiles Acer" loading="eager">
+              </a>
+            </div>
+            <!-- Oferta 8 -->
+            <div class="oferta-item-mobile">
+              <a href="#" class="oferta-link">
+                <img src="assets/img/oferta8.png" alt="Portatil Dell" loading="eager">
+              </a>
+            </div>
+            <!-- Oferta 9 -->
+            <div class="oferta-item-mobile">
+              <a href="#" class="oferta-link">
+                <img src="assets/img/oferta9.png" alt="Portatiles Asus Ryzen" loading="eager">
+              </a>
+            </div>
+          </div>
+          <button class="carousel-btn-mobile next-mobile" aria-label="Siguiente oferta">❯</button>
+          <div class="carousel-nav-mobile">
+            <span class="carousel-dot-mobile active" data-index="0" aria-label="Ir a oferta 1"></span>
+            <span class="carousel-dot-mobile" data-index="1" aria-label="Ir a oferta 2"></span>
+            <span class="carousel-dot-mobile" data-index="2" aria-label="Ir a oferta 3"></span>
+            <span class="carousel-dot-mobile" data-index="3" aria-label="Ir a oferta 4"></span>
+            <span class="carousel-dot-mobile" data-index="4" aria-label="Ir a oferta 5"></span>
+            <span class="carousel-dot-mobile" data-index="5" aria-label="Ir a oferta 6"></span>
+            <span class="carousel-dot-mobile" data-index="6" aria-label="Ir a oferta 7"></span>
+            <span class="carousel-dot-mobile" data-index="7" aria-label="Ir a oferta 8"></span>
+            <span class="carousel-dot-mobile" data-index="8" aria-label="Ir a oferta 9"></span>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Servicios -->
+    <section class="services" id="servicios">
+      <h2 class="services-title">Nuestras Categorías</h2>
+      <div class="services-list" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+        <div class="service">
+          <div class="service-icon">
+            <img src="assets/img/pets/dog-category.png" alt="Productos para Perros" class="service-img-icon" />
+          </div>
+          <div class="service-title">Perros</div>
+          <div class="service-desc">Alimento, snacks, juguetes y todo lo que tu perro necesita para estar feliz y saludable.</div>
+          <a class="service-btn" href="/perros/">Ver más</a>
+        </div>
+        <div class="service">
+          <div class="service-icon">
+            <img src="assets/img/pets/cat-category.png" alt="Productos para Gatos" class="service-img-icon" />
+          </div>
+          <div class="service-title">Gatos</div>
+          <div class="service-desc">Descubre nuestra selección de productos para gatos: arena, rascadores, comida y más.</div>
+          <a class="service-btn" href="/gatos/">Ver más</a>
+        </div>
+        <div class="service">
+          <div class="service-icon">
+            <img src="assets/img/pets/offers-category.png" alt="Ofertas para mascotas" class="service-img-icon" />
+          </div>
+          <div class="service-title">Ofertas</div>
+          <div class="service-desc">Aprovecha nuestros combos y promociones especiales para consentir a tu mascota.</div>
+          <a class="service-btn" href="/ofertas/">Ver más</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact-section" id="contacto">
+      <div class="contact-flex">
+        <div class="contact-info">
+          <h2 class="contact-title">¿Tienes Dudas?</h2>
+          <a class="whatsapp-btn" href="https://wa.link/dtzewy?text=Hola%20Pekitass%2C%20necesito%20ayuda" target="_blank" rel="noopener">
+            <span>💬</span> Chatea con un Asesor
+          </a>
+          <form class="contact-form" action="https://formsubmit.co/tu-correo@example.com" method="POST" autocomplete="off">
+              <input type="text" name="nombre" placeholder="Tu nombre" required>
+              <input type="email" name="email" placeholder="Tu correo electrónico" required>
+              <input type="celular" name="celular" placeholder="Tu celular" required>
+              <textarea name="mensaje" placeholder="Cuéntanos, ¿en qué podemos ayudarte?" required></textarea>
+              <button type="submit">Enviar mensaje</button>
+          </form>
+        </div>
+        <div class="contact-qr">
+          <img src="assets/img/qr.png" alt="QR para chatear por WhatsApp con Pekitass" class="qr-img" />
+          <div class="qr-caption">Escanea para chatear por WhatsApp</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-social">
+        <a href="https://facebook.com/" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener">
+            <img src="assets/img/facebook.png" alt="Facebook" class="footer-icon" />
+        </a>
+        <a href="https://www.instagram.com/pekitass/" title="Instagram" aria-label="Instagram" target="_blank" rel="noopener">
+            <img src="assets/img/instragram.png" alt="Instagram" class="footer-icon" />
+        </a>
+        <a href="https://tiktok.com/" title="Tiktok" aria-label="Tiktok" target="_blank" rel="noopener">
+            <img src="assets/img/tiktok.png" alt="Tiktok" class="footer-icon" />
+        </a>
+        <a href="https://wa.link/dtzewy" title="WhatsApp" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <img src="assets/img/whatsapp.png" alt="WhatsApp" class="footer-icon" />
+        </a>
+    </div>
+    <div>
+      &copy; 2025 Pekitass. Todos los derechos reservados.<br>
+      La tienda preferida de tu mascota.
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/whatsapp-button.css">
+
+  <a href="https://wa.link/dtzewy" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chatea con nosotros por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span>¡Háblanos por WhatsApp!</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/ofertas-nuevo.js"></script>
+  <script src="assets/js/ofertas-mobile-simple.js"></script>
+  <script src="assets/js/whatsapp-ofertas.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // --- DESKTOP MENU LOGIC ---
+      const desktopDropdowns = document.querySelectorAll('header nav .dropdown');
+      desktopDropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('.dropdown-toggle');
+        if (toggle) {
+          toggle.addEventListener('click', function (e) {
+            if (window.innerWidth > 768) {
+              e.preventDefault();
+              const parentDropdown = this.closest('.dropdown');
+              const wasOpen = parentDropdown.classList.contains('open');
+              // Close all other open dropdowns
+              document.querySelectorAll('header nav .dropdown.open').forEach(d => {
+                if (d !== parentDropdown) d.classList.remove('open');
+              });
+              // Toggle the current one
+              parentDropdown.classList.toggle('open');
+            }
+          });
+        }
+      });
+
+      // --- MOBILE MENU LOGIC ---
+      const menuToggle = document.querySelector('.menu-toggle');
+      const mobileNav = document.querySelector('#mobile-nav');
+      
+      // 1. Toggle main mobile menu
+      if (menuToggle && mobileNav) {
+        menuToggle.addEventListener('click', function (e) {
+          e.stopPropagation();
+          this.classList.toggle('active');
+          mobileNav.classList.toggle('active');
+          
+          // Prevent body scroll when menu is open
+          if (mobileNav.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+          } else {
+            document.body.style.overflow = '';
+            // Close all submenus when closing main menu
+            closeAllSubmenus();
+          }
+        });
+      }
+
+      // Function to close all submenus
+      function closeAllSubmenus() {
+        document.querySelectorAll('#mobile-nav .has-submenu').forEach(item => {
+          item.classList.remove('open');
+        });
+      }
+
+      // 2. Handle submenu toggles
+      const menuLinks = document.querySelectorAll('#mobile-nav .menu-link');
+      
+      menuLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          const parentItem = this.parentElement;
+          
+          // If it's a submenu toggle
+          if (parentItem.classList.contains('has-submenu')) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // Close other open menus at the same level first
+            const siblings = Array.from(parentItem.parentElement.children);
+            const wasOpen = parentItem.classList.contains('open');
+            
+            // Close all siblings
+            siblings.forEach(sibling => {
+              if (sibling !== parentItem && sibling.classList.contains('has-submenu')) {
+                sibling.classList.remove('open');
+              }
+            });
+            
+            // Toggle current menu
+            if (!wasOpen) {
+              parentItem.classList.add('open');
+            } else {
+              parentItem.classList.remove('open');
+            }
+            
+            // Prevent the default link behavior
+            return false;
+          }
+        });
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function(e) {
+        // For desktop
+        if (window.innerWidth > 768) {
+          if (!e.target.closest('header nav .dropdown')) {
+            document.querySelectorAll('header nav .dropdown.open').forEach(d => d.classList.remove('open'));
+          }
+          return;
+        }
+        
+        // For mobile
+        if (mobileNav && mobileNav.classList.contains('active') && 
+            !mobileNav.contains(e.target) && 
+            !menuToggle.contains(e.target)) {
+          closeMobileMenu();
+        }
+      });
+      
+      // Function to close mobile menu
+      function closeMobileMenu() {
+        mobileNav.classList.remove('active');
+        menuToggle.classList.remove('active');
+        document.body.style.overflow = '';
+        closeAllSubmenus();
+      }
+      
+      // Handle window resize
+      function handleResize() {
+        if (window.innerWidth > 768) {
+          // Close mobile menu if resizing to desktop
+          if (mobileNav && mobileNav.classList.contains('active')) {
+            closeMobileMenu();
+          }
+        }
+      }
+      
+      // Add debounce to resize event
+      let resizeTimer;
+      window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(handleResize, 250);
+      });
+    });
+  </script>
+</body>
+</html>

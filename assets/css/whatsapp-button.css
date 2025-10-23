@@ -1,0 +1,89 @@
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: auto;
+    padding: 0 20px;
+    border-radius: 30px;
+}
+
+.whatsapp-float i {
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.whatsapp-float span {
+    display: none;
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.whatsapp-float:hover span {
+    display: inline-block;
+    animation: fadeIn 0.3s;
+}
+
+/* Animación de pulso */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Versión móvil */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 28px;
+    }
+    
+    .whatsapp-float:hover {
+        width: auto;
+        padding: 0 15px;
+        border-radius: 30px;
+    }
+    
+    .whatsapp-float:hover span {
+        display: inline-block;
+    }
+}

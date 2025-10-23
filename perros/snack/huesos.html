@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huesos para Perros | Pekitass</title>
+  <meta name="description" content="Huesos de carnaza, prensados y de nylon para el entretenimiento y la salud dental de tu perro.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Perros / Snack / Huesos</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-hueso-01.jpg" alt="Hueso de Carnaza Nudo 6-7\"" class="service-img-icon"></div>
+          <div class="service-title">Hueso de Carnaza Nudo 6-7"</div>
+          <div class="service-desc">Clásico hueso de carnaza para mantener a tu perro entretenido y ayudar a limpiar sus dientes.</div>
+          <div class="product-price">$8,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Hueso de Carnaza Nudo 6-7&quot;">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-hueso-02.jpg" alt="Hueso Prensado de Calcio 4\"" class="service-img-icon"></div>
+          <div class="service-title">Hueso Prensado de Calcio 4"</div>
+          <div class="service-desc">Hueso de carnaza prensada enriquecido con calcio para huesos fuertes.</div>
+          <div class="product-price">$5,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Hueso Prensado de Calcio 4&quot;">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-hueso-03.jpg" alt="Hueso de Nylon Sabor Pollo" class="service-img-icon"></div>
+          <div class="service-title">Hueso de Nylon Sabor Pollo</div>
+          <div class="service-desc">Juguete masticable ultra duradero que satisface la necesidad de morder.</div>
+          <div class="product-price">$25,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Hueso de Nylon Sabor Pollo">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-hueso-04.jpg" alt="Palitos de Carnaza (10 unidades)" class="service-img-icon"></div>
+          <div class="service-title">Palitos de Carnaza (10 unidades)</div>
+          <div class="service-desc">Snacks más pequeños y delgados, perfectos para perros de razas pequeñas.</div>
+          <div class="product-price">$10,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Palitos de Carnaza (10 unidades)">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-hueso-05.jpg" alt="Hueso Relleno de Mantequilla de Maní" class="service-img-icon"></div>
+          <div class="service-title">Hueso Relleno de Mantequilla de Maní</div>
+          <div class="service-desc">Hueso natural esterilizado y relleno con un delicioso premio.</div>
+          <div class="product-price">$18,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Hueso Relleno de Mantequilla de Maní">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-hueso-06.jpg" alt="Rodilla de Res Deshidratada" class="service-img-icon"></div>
+          <div class="service-title">Rodilla de Res Deshidratada</div>
+          <div class="service-desc">Snack 100% natural, duradero y excelente para la salud dental.</div>
+          <div class="product-price">$12,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Rodilla de Res Deshidratada">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

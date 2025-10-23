@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camas, Casas y Gimnasios para Gatos | Pekitass</title>
+  <meta name="description" content="Camas, casas, gimnasios y rascadores para el descanso y la diversión de tu gato.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Gatos / Accesorios / Camas, Casas y Gimnasios</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-cama-01.jpg" alt="Gimnasio Rascador de 3 Niveles" class="service-img-icon"></div>
+          <div class="service-title">Gimnasio Rascador de 3 Niveles</div>
+          <div class="service-desc">Con múltiples plataformas, cueva y juguetes colgantes para máxima diversión.</div>
+          <div class="product-price">$250,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Gimnasio Rascador de 3 Niveles">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-cama-02.jpg" alt="Cama tipo Cueva de Felpa" class="service-img-icon"></div>
+          <div class="service-title">Cama tipo Cueva de Felpa</div>
+          <div class="service-desc">Un refugio cálido y suave para que tu gato se sienta seguro y cómodo.</div>
+          <div class="product-price">$90,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Cama tipo Cueva de Felpa">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-cama-03.jpg" alt="Rascador de Cartón Corrugado" class="service-img-icon"></div>
+          <div class="service-title">Rascador de Cartón Corrugado</div>
+          <div class="service-desc">Una opción económica y efectiva para que tu gato afile sus uñas.</div>
+          <div class="product-price">$30,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Rascador de Cartón Corrugado">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-cama-04.jpg" alt="Cama de Ventana con Ventosas" class="service-img-icon"></div>
+          <div class="service-title">Cama de Ventana con Ventosas</div>
+          <div class="service-desc">Permite que tu gato tome el sol y observe el exterior desde las alturas.</div>
+          <div class="product-price">$75,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Cama de Ventana con Ventosas">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-cama-05.jpg" alt="Poste Rascador Alto con Base" class="service-img-icon"></div>
+          <div class="service-title">Poste Rascador Alto con Base</div>
+          <div class="service-desc">Ideal para que los gatos se estiren mientras rascan. Forrado en cabuya.</div>
+          <div class="product-price">$120,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Poste Rascador Alto con Base">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-cama-06.jpg" alt="Casa de Madera de 2 Pisos" class="service-img-icon"></div>
+          <div class="service-title">Casa de Madera de 2 Pisos</div>
+          <div class="service-desc">Una elegante casa de interior con espacio para descansar y jugar.</div>
+          <div class="product-price">$180,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Casa de Madera de 2 Pisos">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

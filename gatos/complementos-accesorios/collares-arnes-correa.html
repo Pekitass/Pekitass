@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collares, Arneses y Correas para Gatos | Pekitass</title>
+  <meta name="description" content="Collares con cascabel, arneses para paseos y correas seguras para tu gato.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Gatos / Accesorios / Collares, Arneses y Correas</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-collar-01.jpg" alt="Collar Elástico con Cascabel" class="service-img-icon"></div>
+          <div class="service-title">Collar Elástico con Cascabel</div>
+          <div class="service-desc">Diseño seguro que se libera si el gato se engancha. Incluye cascabel.</div>
+          <div class="product-price">$15,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Collar Elástico con Cascabel">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-collar-02.jpg" alt="Arnés tipo Chaleco para Paseo" class="service-img-icon"></div>
+          <div class="service-title">Arnés tipo Chaleco para Paseo</div>
+          <div class="service-desc">Cómodo y seguro, distribuye la presión para evitar escapes.</div>
+          <div class="product-price">$55,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Arnés tipo Chaleco para Paseo">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-collar-03.jpg" alt="Correa de Nylon Ligera de 1.5m" class="service-img-icon"></div>
+          <div class="service-title">Correa de Nylon Ligera de 1.5m</div>
+          <div class="service-desc">Ideal para pasear a tu gato de forma segura. Mosquetón resistente.</div>
+          <div class="product-price">$25,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Correa de Nylon Ligera de 1.5m">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-collar-04.jpg" alt="Collar de Cuero con Placa de Identificación" class="service-img-icon"></div>
+          <div class="service-title">Collar de Cuero con Placa de Identificación</div>
+          <div class="service-desc">Un toque de elegancia y seguridad. Incluye grabado de nombre y teléfono.</div>
+          <div class="product-price">$45,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Collar de Cuero con Placa de Identificación">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-collar-05.jpg" alt="Arnés y Correa Reflectivos" class="service-img-icon"></div>
+          <div class="service-title">Arnés y Correa Reflectivos</div>
+          <div class="service-desc">Perfecto para paseos nocturnos, aumenta la visibilidad de tu gato.</div>
+          <div class="product-price">$65,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Arnés y Correa Reflectivos">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-collar-06.jpg" alt="Collar Antipulgas y Garrapatas" class="service-img-icon"></div>
+          <div class="service-title">Collar Antipulgas y Garrapatas</div>
+          <div class="service-desc">Protege a tu gato de parásitos externos hasta por 8 meses.</div>
+          <div class="product-price">$90,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Collar Antipulgas y Garrapatas">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

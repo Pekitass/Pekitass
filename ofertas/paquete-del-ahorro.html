@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paquetes del Ahorro | Pekitass</title>
+  <meta name="description" content="Combos y promociones especiales en productos para perros y gatos.">
+  <link rel="icon" type="image/png" href="../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Ofertas / Paquetes del Ahorro</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../assets/img/pets/combo-01.jpg" alt="Combo Bienvenida Cachorro" class="service-img-icon"></div>
+          <div class="service-title">Combo Bienvenida Cachorro</div>
+          <div class="service-desc">Incluye: 1.5kg de concentrado, cama pequeña, un juguete y un paquete de pañitos húmedos.</div>
+          <div class="product-price">$99,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Combo Bienvenida Cachorro">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../assets/img/pets/combo-02.jpg" alt="Combo Gato Feliz" class="service-img-icon"></div>
+          <div class="service-title">Combo Gato Feliz</div>
+          <div class="service-desc">Incluye: Rascador de cartón, vara con plumas y un paquete de snacks de catnip.</div>
+          <div class="product-price">$55,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Combo Gato Feliz">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../assets/img/pets/combo-03.jpg" alt="Combo Arena 2x10kg" class="service-img-icon"></div>
+          <div class="service-title">Combo Arena 2x10kg</div>
+          <div class="service-desc">Lleva dos bolsas de arena aglomerante de 10kg a un precio especial.</div>
+          <div class="product-price">$70,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Combo Arena 2x10kg">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../assets/img/pets/combo-04.jpg" alt="Combo Paseo Seguro Perro" class="service-img-icon"></div>
+          <div class="service-title">Combo Paseo Seguro Perro</div>
+          <div class="service-desc">Incluye: Arnés antitirones, correa de cuerda y un bebedero portátil.</div>
+          <div class="product-price">$120,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Combo Paseo Seguro Perro">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../assets/img/pets/combo-05.jpg" alt="Combo Higiene Total Gato" class="service-img-icon"></div>
+          <div class="service-title">Combo Higiene Total Gato</div>
+          <div class="service-desc">Incluye: Arenero cubierto, pala metálica y un tapete atrapa arena.</div>
+          <div class="product-price">$190,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Combo Higiene Total Gato">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../assets/img/pets/combo-06.jpg" alt="Combo Snacks Surtidos Perro" class="service-img-icon"></div>
+          <div class="service-title">Combo Snacks Surtidos Perro</div>
+          <div class="service-desc">Un paquete con galletas, huesos de carnaza y premios dentales.</div>
+          <div class="product-price">$40,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Combo Snacks Surtidos Perro">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

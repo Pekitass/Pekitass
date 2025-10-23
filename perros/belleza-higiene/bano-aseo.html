@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baño y Aseo para Perros | Pekitass</title>
+  <meta name="description" content="Shampoos, cepillos, toallas y todo lo que necesitas para el baño y aseo de tu perro.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Perros / Belleza e Higiene / Baño y Aseo</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/aseo-01.jpg" alt="Shampoo de Avena para Piel Sensible" class="service-img-icon"></div>
+          <div class="service-title">Shampoo de Avena para Piel Sensible</div>
+          <div class="service-desc">Fórmula hipoalergénica que calma la piel irritada y deja el pelaje suave.</div>
+          <div class="product-price">$35,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Shampoo de Avena para Piel Sensible">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/aseo-02.jpg" alt="Acondicionador Desenredante" class="service-img-icon"></div>
+          <div class="service-title">Acondicionador Desenredante</div>
+          <div class="service-desc">Facilita el cepillado y deja un aroma fresco y duradero.</div>
+          <div class="product-price">$30,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Acondicionador Desenredante">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/aseo-03.jpg" alt="Cepillo de Goma para Baño" class="service-img-icon"></div>
+          <div class="service-title">Cepillo de Goma para Baño</div>
+          <div class="service-desc">Masajea la piel y ayuda a remover el pelo suelto durante el baño.</div>
+          <div class="product-price">$25,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Cepillo de Goma para Baño">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/aseo-04.jpg" alt="Toalla de Microfibra Ultra Absorbente" class="service-img-icon"></div>
+          <div class="service-title">Toalla de Microfibra Ultra Absorbente</div>
+          <div class="service-desc">Seca a tu perro rápidamente después del baño. Tamaño grande.</div>
+          <div class="product-price">$40,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Toalla de Microfibra Ultra Absorbente">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/aseo-05.jpg" alt="Pañitos Húmedos para Patas y Pelaje" class="service-img-icon"></div>
+          <div class="service-title">Pañitos Húmedos para Patas y Pelaje</div>
+          <div class="service-desc">Para una limpieza rápida y fácil entre baños. Con aloe vera.</div>
+          <div class="product-price">$15,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Pañitos Húmedos para Patas y Pelaje">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/aseo-06.jpg" alt="Cortaúñas Profesional con Seguro" class="service-img-icon"></div>
+          <div class="service-title">Cortaúñas Profesional con Seguro</div>
+          <div class="service-desc">Corte preciso y seguro para mantener las uñas de tu perro en buen estado.</div>
+          <div class="product-price">$28,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Cortaúñas Profesional con Seguro">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

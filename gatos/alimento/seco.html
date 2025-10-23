@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alimento Seco para Gatos | Pekitass</title>
+  <meta name="description" content="La mejor selección de alimento seco para gatos. Marcas como CatPro, NutriCat y más.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Gatos / Alimento / Seco</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-food-01.jpg" alt="CatPro Adulto Salmón 2kg" class="service-img-icon"></div>
+          <div class="service-title">CatPro Adulto Salmón 2kg</div>
+          <div class="service-desc">Alimento completo con salmón para gatos adultos de todas las razas.</div>
+          <div class="product-price">$45,000 COP</div>
+          <button class="service-btn buy-btn" data-product="CatPro Adulto Salmón 2kg">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-food-02.jpg" alt="NutriCat Gatito 1kg" class="service-img-icon"></div>
+          <div class="service-title">NutriCat Gatito 1kg</div>
+          <div class="service-desc">Fórmula especializada para el crecimiento y desarrollo saludable de gatitos.</div>
+          <div class="product-price">$30,000 COP</div>
+          <button class="service-btn buy-btn" data-product="NutriCat Gatito 1kg">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-food-03.jpg" alt="Premium Indoor Cat 3kg" class="service-img-icon"></div>
+          <div class="service-title">Premium Indoor Cat 3kg</div>
+          <div class="service-desc">Ideal para gatos de interior, ayuda a controlar las bolas de pelo.</div>
+          <div class="product-price">$65,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Premium Indoor Cat 3kg">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-food-04.jpg" alt="Senior Care 7+ Años 2kg" class="service-img-icon"></div>
+          <div class="service-title">Senior Care 7+ Años 2kg</div>
+          <div class="service-desc">Nutrición adaptada para gatos mayores, con soporte para la salud renal.</div>
+          <div class="product-price">$55,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Senior Care 7+ Años 2kg">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-food-05.jpg" alt="Urinary Care 1.5kg" class="service-img-icon"></div>
+          <div class="service-title">Urinary Care 1.5kg</div>
+          <div class="service-desc">Ayuda a mantener un sistema urinario saludable y a prevenir cristales.</div>
+          <div class="product-price">$75,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Urinary Care 1.5kg">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-food-06.jpg" alt="Hairball Control 2.5kg" class="service-img-icon"></div>
+          <div class="service-title">Hairball Control 2.5kg</div>
+          <div class="service-desc">Fórmula con fibra para ayudar a reducir la formación de bolas de pelo.</div>
+          <div class="product-price">$60,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Hairball Control 2.5kg">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

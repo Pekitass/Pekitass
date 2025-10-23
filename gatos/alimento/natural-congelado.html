@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alimento Natural Congelado para Gatos | Pekitass</title>
+  <meta name="description" content="Alimento BARF y dietas naturales congeladas para una nutrición superior para tu gato.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Gatos / Alimento / Natural Congelado</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-barf-01.jpg" alt="Dieta BARF Pollo y Pescado 250g" class="service-img-icon"></div>
+          <div class="service-title">Dieta BARF Pollo y Pescado 250g</div>
+          <div class="service-desc">Mezcla de pollo y pescado crudo, con taurina esencial para gatos.</div>
+          <div class="product-price">$12,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Dieta BARF Pollo y Pescado 250g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-barf-02.jpg" alt="Dieta BARF Pavo 250g" class="service-img-icon"></div>
+          <div class="service-title">Dieta BARF Pavo 250g</div>
+          <div class="service-desc">Nutrición completa basada en carne de pavo cruda de alta calidad.</div>
+          <div class="product-price">$14,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Dieta BARF Pavo 250g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-barf-03.jpg" alt="Medallones de Salmón 500g" class="service-img-icon"></div>
+          <div class="service-title">Medallones de Salmón 500g</div>
+          <div class="service-desc">Porciones congeladas de salmón, listas para descongelar y servir.</div>
+          <div class="product-price">$25,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Medallones de Salmón 500g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-barf-04.jpg" alt="Mix de Corazones de Pollo 150g" class="service-img-icon"></div>
+          <div class="service-title">Mix de Corazones de Pollo 150g</div>
+          <div class="service-desc">Suplemento rico en taurina para la salud cardíaca de tu gato.</div>
+          <div class="product-price">$10,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Mix de Corazones de Pollo 150g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-barf-05.jpg" alt="Dieta Cocida de Res 250g" class="service-img-icon"></div>
+          <div class="service-title">Dieta Cocida de Res 250g</div>
+          <div class="service-desc">Alternativa a la dieta cruda, cocinada a baja temperatura para preservar nutrientes.</div>
+          <div class="product-price">$15,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Dieta Cocida de Res 250g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-barf-06.jpg" alt="Caldo de Huesos Concentrado" class="service-img-icon"></div>
+          <div class="service-title">Caldo de Huesos Concentrado</div>
+          <div class="service-desc">Ideal para hidratar y añadir un extra de nutrientes a su comida.</div>
+          <div class="product-price">$18,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Caldo de Huesos Concentrado">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

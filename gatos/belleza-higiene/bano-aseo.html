@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baño y Aseo para Gatos | Pekitass</title>
+  <meta name="description" content="Shampoos en seco, cepillos, y todo lo que necesitas para el aseo de tu gato.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Gatos / Belleza e Higiene / Baño y Aseo</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-aseo-01.jpg" alt="Shampoo en Seco en Espuma" class="service-img-icon"></div>
+          <div class="service-title">Shampoo en Seco en Espuma</div>
+          <div class="service-desc">Ideal para gatos que no disfrutan del agua. Limpia y refresca el pelaje sin enjuague.</div>
+          <div class="product-price">$30,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Shampoo en Seco en Espuma">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-aseo-02.jpg" alt="Cepillo de Goma Suave" class="service-img-icon"></div>
+          <div class="service-title">Cepillo de Goma Suave</div>
+          <div class="service-desc">Masajea la piel y elimina el pelo suelto de forma gentil.</div>
+          <div class="product-price">$25,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Cepillo de Goma Suave">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-aseo-03.jpg" alt="Toallitas Húmedas con Clorhexidina" class="service-img-icon"></div>
+          <div class="service-title">Toallitas Húmedas con Clorhexidina</div>
+          <div class="service-desc">Para una limpieza antiséptica de patas, pelaje y zonas sensibles.</div>
+          <div class="product-price">$18,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Toallitas Húmedas con Clorhexidina">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-aseo-04.jpg" alt="Cortaúñas Pequeño para Gatos" class="service-img-icon"></div>
+          <div class="service-title">Cortaúñas Pequeño para Gatos</div>
+          <div class="service-desc">Diseño ergonómico para un corte de uñas preciso y seguro.</div>
+          <div class="product-price">$22,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Cortaúñas Pequeño para Gatos">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-aseo-05.jpg" alt="Limpiador de Oídos y Ojos" class="service-img-icon"></div>
+          <div class="service-title">Limpiador de Oídos y Ojos</div>
+          <div class="service-desc">Solución suave para mantener limpios los oídos y el contorno de los ojos.</div>
+          <div class="product-price">$28,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Limpiador de Oídos y Ojos">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-aseo-06.jpg" alt="Guante de Cepillado" class="service-img-icon"></div>
+          <div class="service-title">Guante de Cepillado</div>
+          <div class="service-desc">Acaricia a tu gato mientras eliminas el pelo muerto de forma fácil.</div>
+          <div class="product-price">$35,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Guante de Cepillado">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

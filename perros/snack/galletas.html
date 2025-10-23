@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galletas para Perros | Pekitass</title>
+  <meta name="description" content="Galletas crujientes y sabrosas para perros. El premio perfecto para tu mascota.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Perros / Snack / Galletas</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-galleta-01.jpg" alt="Galletas Crunchy Mix 500g" class="service-img-icon"></div>
+          <div class="service-title">Galletas Crunchy Mix 500g</div>
+          <div class="service-desc">Surtido de galletas con sabores a pollo, carne y leche.</div>
+          <div class="product-price">$18,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Galletas Crunchy Mix 500g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-galleta-02.jpg" alt="Mini Bites Entrenamiento 150g" class="service-img-icon"></div>
+          <div class="service-title">Mini Bites Entrenamiento 150g</div>
+          <div class="service-desc">Galletas pequeñas, ideales para premiar durante el adiestramiento.</div>
+          <div class="product-price">$12,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Mini Bites Entrenamiento 150g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-galleta-03.jpg" alt="Galletas Integrales de Avena 200g" class="service-img-icon"></div>
+          <div class="service-title">Galletas Integrales de Avena 200g</div>
+          <div class="service-desc">Opción saludable con fibra para una buena digestión.</div>
+          <div class="product-price">$15,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Galletas Integrales de Avena 200g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-galleta-04.jpg" alt="Galletas para Cachorro Sabor Leche 180g" class="service-img-icon"></div>
+          <div class="service-title">Galletas para Cachorro Sabor Leche 180g</div>
+          <div class="service-desc">Enriquecidas con calcio para el desarrollo de huesos y dientes fuertes.</div>
+          <div class="product-price">$14,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Galletas para Cachorro Sabor Leche 180g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-galleta-05.jpg" alt="Galletas de Mantequilla de Maní 250g" class="service-img-icon"></div>
+          <div class="service-title">Galletas de Mantequilla de Maní 250g</div>
+          <div class="service-desc">Un premio irresistible y lleno de energía para tu perro.</div>
+          <div class="product-price">$16,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Galletas de Mantequilla de Maní 250g">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/snack-galleta-06.jpg" alt="Galletas Senior Light 200g" class="service-img-icon"></div>
+          <div class="service-title">Galletas Senior Light 200g</div>
+          <div class="service-desc">Bajas en grasa y fáciles de masticar para perros mayores.</div>
+          <div class="product-price">$15,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Galletas Senior Light 200g">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

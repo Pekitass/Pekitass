@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juguetes Interactivos para Perros | Pekitass</title>
+  <meta name="description" content="Juguetes y rompecabezas para perros que estimulan su mente y combaten el aburrimiento.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Perros / Juguetes / Interactivos</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/juguete-interactivo-01.jpg" alt="Dispensador de Golosinas Wobbler" class="service-img-icon"></div>
+          <div class="service-title">Dispensador de Golosinas Wobbler</div>
+          <div class="service-desc">Un juguete que se tambalea y libera premios mientras tu perro juega.</div>
+          <div class="product-price">$45,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Dispensador de Golosinas Wobbler">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/juguete-interactivo-02.jpg" alt="Rompecabezas Nivel 1" class="service-img-icon"></div>
+          <div class="service-title">Rompecabezas Nivel 1</div>
+          <div class="service-desc">Juego de iniciación para que tu perro aprenda a buscar premios escondidos.</div>
+          <div class="product-price">$55,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Rompecabezas Nivel 1">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/juguete-interactivo-03.jpg" alt="Alfombra Olfativa para Sniffing" class="service-img-icon"></div>
+          <div class="service-title">Alfombra Olfativa para Sniffing</div>
+          <div class="service-desc">Estimula su olfato y reduce la ansiedad al buscar comida en la alfombra.</div>
+          <div class="product-price">$65,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Alfombra Olfativa para Sniffing">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/juguete-interactivo-04.jpg" alt="Pelota Interactiva con Sonido" class="service-img-icon"></div>
+          <div class="service-title">Pelota Interactiva con Sonido</div>
+          <div class="service-desc">Una pelota que emite sonidos divertidos al moverse, manteniendo a tu perro enganchado.</div>
+          <div class="product-price">$35,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Pelota Interactiva con Sonido">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/juguete-interactivo-05.jpg" alt="Juguete Rellenable Classic" class="service-img-icon"></div>
+          <div class="service-title">Juguete Rellenable Classic</div>
+          <div class="service-desc">El clásico juguete de goma para rellenar con premios o comida húmeda.</div>
+          <div class="product-price">$40,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Juguete Rellenable Classic">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/juguete-interactivo-06.jpg" alt="Torre de Discos Deslizantes" class="service-img-icon"></div>
+          <div class="service-title">Torre de Discos Deslizantes</div>
+          <div class="service-desc">Rompecabezas de nivel intermedio que requiere que tu perro deslice discos para encontrar premios.</div>
+          <div class="product-price">$75,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Torre de Discos Deslizantes">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

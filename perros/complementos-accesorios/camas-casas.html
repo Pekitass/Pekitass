@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camas y Casas para Perros | Pekitass</title>
+  <meta name="description" content="Camas cómodas, casas y guacales para el descanso y confort de tu perro.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Perros / Accesorios / Camas y Casas</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cama-01.jpg" alt="Cama Redonda de Felpa" class="service-img-icon"></div>
+          <div class="service-title">Cama Redonda de Felpa</div>
+          <div class="service-desc">Extra suave y acolchada, ideal para perros que aman acurrucarse.</div>
+          <div class="product-price">$90,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Cama Redonda de Felpa">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cama-02.jpg" alt="Colchón Ortopédico de Espuma" class="service-img-icon"></div>
+          <div class="service-title">Colchón Ortopédico de Espuma</div>
+          <div class="service-desc">Soporte ideal para las articulaciones de perros grandes o mayores.</div>
+          <div class="product-price">$150,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Colchón Ortopédico de Espuma">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cama-03.jpg" alt="Casa de Plástico para Exterior" class="service-img-icon"></div>
+          <div class="service-title">Casa de Plástico para Exterior</div>
+          <div class="service-desc">Resistente a la intemperie, fácil de limpiar y perfecta para el jardín.</div>
+          <div class="product-price">$250,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Casa de Plástico para Exterior">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cama-04.jpg" alt="Cama tipo Cueva para Razas Pequeñas" class="service-img-icon"></div>
+          <div class="service-title">Cama tipo Cueva para Razas Pequeñas</div>
+          <div class="service-desc">Un refugio cálido y seguro para que los perros pequeños se sientan protegidos.</div>
+          <div class="product-price">$85,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Cama tipo Cueva para Razas Pequeñas">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cama-05.jpg" alt="Tapete Refrescante para Verano" class="service-img-icon"></div>
+          <div class="service-title">Tapete Refrescante para Verano</div>
+          <div class="service-desc">Ayuda a mantener a tu perro fresco en los días calurosos sin necesidad de refrigeración.</div>
+          <div class="product-price">$70,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Tapete Refrescante para Verano">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cama-06.jpg" alt="Sofá Cama Elegante" class="service-img-icon"></div>
+          <div class="service-title">Sofá Cama Elegante</div>
+          <div class="service-desc">Una cama con estilo que combina con la decoración de tu hogar.</div>
+          <div class="product-price">$180,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Sofá Cama Elegante">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

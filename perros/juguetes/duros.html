@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juguetes Duros para Perros | Pekitass</title>
+  <meta name="description" content="Juguetes extra resistentes para los perros con las mordidas más fuertes. Durabilidad garantizada.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Perros / Juguetes / Duros</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/juguete-duro-01.jpg" alt="Hueso de Goma Extra Fuerte" class="service-img-icon"></div>
+          <div class="service-title">Hueso de Goma Extra Fuerte</div>
+          <div class="service-desc">Diseñado para resistir las mandíbulas más poderosas. Prácticamente indestructible.</div>
+          <div class="product-price">$50,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Hueso de Goma Extra Fuerte">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/juguete-duro-02.jpg" alt="Anillo de Caucho Macizo" class="service-img-icon"></div>
+          <div class="service-title">Anillo de Caucho Macizo</div>
+          <div class="service-desc">Perfecto para juegos de tirar y para masticadores agresivos.</div>
+          <div class="product-price">$45,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Anillo de Caucho Macizo">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/juguete-duro-03.jpg" alt="Pelota de Goma Dura" class="service-img-icon"></div>
+          <div class="service-title">Pelota de Goma Dura</div>
+          <div class="service-desc">Una pelota que rebota de forma impredecible y resiste mordidas fuertes.</div>
+          <div class="product-price">$38,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Pelota de Goma Dura">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/juguete-duro-04.jpg" alt="Juguete Dental de Nylon" class="service-img-icon"></div>
+          <div class="service-title">Juguete Dental de Nylon</div>
+          <div class="service-desc">Ayuda a limpiar los dientes mientras satisface el instinto de masticación.</div>
+          <div class="product-price">$42,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Juguete Dental de Nylon">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/juguete-duro-05.jpg" alt="Cono Rellenable Extremo" class="service-img-icon"></div>
+          <div class="service-title">Cono Rellenable Extremo</div>
+          <div class="service-desc">La versión más resistente del clásico cono, para horas de diversión.</div>
+          <div class="product-price">$55,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Cono Rellenable Extremo">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/juguete-duro-06.jpg" alt="Palo de Goma para Masticar" class="service-img-icon"></div>
+          <div class="service-title">Palo de Goma para Masticar</div>
+          <div class="service-desc">Una alternativa segura a las ramas de madera, con textura para mayor interés.</div>
+          <div class="product-price">$48,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Palo de Goma para Masticar">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

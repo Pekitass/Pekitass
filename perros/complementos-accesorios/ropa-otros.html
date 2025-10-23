@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ropa y Otros Accesorios para Perros | Pekitass</title>
+  <meta name="description" content="Ropa, disfraces y otros accesorios para que tu perro luzca a la moda y esté cómodo.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Perros / Accesorios / Ropa y Otros</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/ropa-01.jpg" alt="Buzo con Capota Gris" class="service-img-icon"></div>
+          <div class="service-title">Buzo con Capota Gris</div>
+          <div class="service-desc">Ideal para los días fríos. Hecho de algodón suave y cómodo.</div>
+          <div class="product-price">$45,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Buzo con Capota Gris">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/ropa-02.jpg" alt="Impermeable Amarillo" class="service-img-icon"></div>
+          <div class="service-title">Impermeable Amarillo</div>
+          <div class="service-desc">Protege a tu perro de la lluvia con este impermeable ligero y fácil de poner.</div>
+          <div class="product-price">$55,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Impermeable Amarillo">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/ropa-03.jpg" alt="Disfraz de Superhéroe" class="service-img-icon"></div>
+          <div class="service-title">Disfraz de Superhéroe</div>
+          <div class="service-desc">Para que tu perro sea la estrella de la fiesta de disfraces.</div>
+          <div class="product-price">$40,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Disfraz de Superhéroe">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/ropa-04.jpg" alt="Pañoleta Elegante" class="service-img-icon"></div>
+          <div class="service-title">Pañoleta Elegante</div>
+          <div class="service-desc">Un accesorio simple que le da un toque de estilo a tu perro.</div>
+          <div class="product-price">$15,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Pañoleta Elegante">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/ropa-05.jpg" alt="Zapatos Protectores para Patas (Set de 4)" class="service-img-icon"></div>
+          <div class="service-title">Zapatos Protectores para Patas (Set de 4)</div>
+          <div class="service-desc">Protegen sus almohadillas del asfalto caliente y terrenos difíciles.</div>
+          <div class="product-price">$50,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Zapatos Protectores para Patas (Set de 4)">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/ropa-06.jpg" alt="Gafas de Sol para Perro" class="service-img-icon"></div>
+          <div class="service-title">Gafas de Sol para Perro</div>
+          <div class="service-desc">Protección UV y mucho estilo para los paseos en días soleados.</div>
+          <div class="product-price">$30,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Gafas de Sol para Perro">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>

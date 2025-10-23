@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peluquería para Gatos | Pekitass</title>
+  <meta name="description" content="Cepillos, peines y accesorios para el cuidado del pelaje de tu gato.">
+  <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body class="subpage">
+  <header>
+    <!-- Header reutilizado -->
+  </header>
+
+  <main>
+    <section class="services">
+      <h1 class="services-title">Gatos / Belleza e Higiene / Peluquería</h1>
+      <div class="services-list product-grid">
+
+        <!-- Producto 1 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-peluqueria-01.jpg" alt="Cepillo Deslanador para Pelo Corto" class="service-img-icon"></div>
+          <div class="service-title">Cepillo Deslanador para Pelo Corto</div>
+          <div class="service-desc">Reduce la muda y elimina el pelo suelto de forma eficaz y segura.</div>
+          <div class="product-price">$55,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Cepillo Deslanador para Pelo Corto">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-peluqueria-02.jpg" alt="Peine Metálico para Nudos" class="service-img-icon"></div>
+          <div class="service-title">Peine Metálico para Nudos</div>
+          <div class="service-desc">Ideal para gatos de pelo largo, ayuda a deshacer nudos sin tirones.</div>
+          <div class="product-price">$20,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Peine Metálico para Nudos">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-peluqueria-03.jpg" alt="Carda Suave para Pelo Fino" class="service-img-icon"></div>
+          <div class="service-title">Carda Suave para Pelo Fino</div>
+          <div class="service-desc">Perfecta para el cepillado diario, deja el pelaje suave y brillante.</div>
+          <div class="product-price">$28,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Carda Suave para Pelo Fino">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-peluqueria-04.jpg" alt="Tijeras de Seguridad con Punta Redonda" class="service-img-icon"></div>
+          <div class="service-title">Tijeras de Seguridad con Punta Redonda</div>
+          <div class="service-desc">Para recortar el pelo en zonas delicadas como cara y patas.</div>
+          <div class="product-price">$35,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Tijeras de Seguridad con Punta Redonda">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-peluqueria-05.jpg" alt="Máquina Cortapelo Silenciosa" class="service-img-icon"></div>
+          <div class="service-title">Máquina Cortapelo Silenciosa</div>
+          <div class="service-desc">Ideal para gatos sensibles al ruido, permite un corte rápido y sin estrés.</div>
+          <div class="product-price">$140,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Máquina Cortapelo Silenciosa">Comprar por WhatsApp</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="service product-card">
+          <div class="service-icon"><img src="../../../assets/img/pets/cat-peluqueria-06.jpg" alt="Rodillo Quita Pelos Adhesivo" class="service-img-icon"></div>
+          <div class="service-title">Rodillo Quita Pelos Adhesivo</div>
+          <div class="service-desc">Elimina el pelo de tu ropa y muebles de forma rápida y sencilla.</div>
+          <div class="product-price">$15,000 COP</div>
+          <button class="service-btn buy-btn" data-product="Rodillo Quita Pelos Adhesivo">Comprar por WhatsApp</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer reutilizado -->
+  </footer>
+
+  <script>
+    document.querySelectorAll('.buy-btn').forEach(button => {
+      button.addEventListener('click', function() {
+        const producto = this.getAttribute('data-product');
+        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
+        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+      });
+    });
+  </script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+</html>
