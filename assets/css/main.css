@@ -343,12 +343,16 @@ nav a.nav-link {
 @media (max-width: 768px) {
   /* --- General Mobile Layout --- */
   .navbar {
-    height: 56px;
+    height: auto; /* Altura automática para ajustarse al contenido */
     padding: 0 1rem;
   }
 
   .logo-letras {
-    display: none; /* Hide text logo on mobile */
+    display: block; /* Asegurarse de que sea visible */
+    max-height: 65px !important; /* Tamaño base */
+    transform: scale(1.4); /* Aumentar tamaño visual en un 20% */
+    transform-origin: left center; /* Escalar desde el lado izquierdo */
+    margin-right: 10px; /* Añadir espacio a la derecha */
   }
 
   /* --- Toggle Visibility of Navigations --- */
@@ -1122,5 +1126,19 @@ footer {
     text-align: center;
     margin-bottom: 15px;
     color: #000000; /* Negro puro para móviles */
+  }
+}
+
+/* Ajustes adicionales para el logo en móvil */
+@media (max-width: 768px) {
+  .navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .logo-icon {
+    max-height: 45px !important; /* Tamaño ajustado para móvil */
+  }
+  .logo-letras {
+    max-height: 30px !important; /* Tamaño ajustado para móvil */
   }
 }
