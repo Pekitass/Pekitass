@@ -177,7 +177,7 @@ header .navbar .toggle-menu.mobile-only {
     position: absolute;
     height: 3px; /* Más altas */
     width: 22px; /* Ligeramente más grande */
-    background: #333;
+    background: #6D3E05; /* Color café oscuro */
     border-radius: 2px;
     opacity: 1;
     left: 50%;

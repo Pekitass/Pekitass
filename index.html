@@ -274,7 +274,7 @@
 
           <!-- CONTACTO -->
           <li>
-            <a href="/contacto">Contacto</a>
+            <a href="#contacto" class="contact-link">Contacto</a>
           </li>
 
         </ul>
@@ -301,7 +301,7 @@
     <section id="inicio" class="hero">
       <h1>Todo para tu peludo: alimento, juguetes y más</h1>
       <p>La mejor calidad en productos para perros y gatos. ¡Tu mascota feliz, tú feliz!</p>
-      <a href="https://wa.link/dtzewy" class="cta-btn" target="_blank">Compra por WhatsApp</a>
+      <a href="https://wa.link/l4v3ag" class="cta-btn" target="_blank">Compra por WhatsApp</a>
     </section>
 
     <!-- Sección de Ofertas Especiales -->
@@ -493,10 +493,10 @@
       <div class="contact-flex">
         <div class="contact-info">
           <h2 class="contact-title">¿Tienes Dudas?</h2>
-          <a class="whatsapp-btn" href="https://wa.link/dtzewy?text=Hola%20Pekitass%2C%20necesito%20ayuda" target="_blank" rel="noopener">
+          <a class="whatsapp-btn" href="https://wa.link/l4v3ag" target="_blank" rel="noopener">
             <span>💬</span> Chatea con un Asesor
           </a>
-          <form class="contact-form" action="https://formsubmit.co/tu-correo@example.com" method="POST" autocomplete="off">
+          <form class="contact-form" action="https://formsubmit.co/contactopekitass@gmail.com" method="POST" autocomplete="off">
               <input type="text" name="nombre" placeholder="Tu nombre" required>
               <input type="email" name="email" placeholder="Tu correo electrónico" required>
               <input type="celular" name="celular" placeholder="Tu celular" required>
@@ -515,16 +515,16 @@
   <!-- Footer -->
   <footer>
     <div class="footer-social">
-        <a href="https://facebook.com/" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener">
+        <a href="https://www.facebook.com/share/1FYpscAquS/" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener">
             <img src="assets/img/facebook.png" alt="Facebook" class="footer-icon" />
         </a>
-        <a href="https://www.instagram.com/pekitass/" title="Instagram" aria-label="Instagram" target="_blank" rel="noopener">
+        <a href="https://www.instagram.com/pekitass_8?igsh=cXdkaW5zeXh6MjI3" title="Instagram" aria-label="Instagram" target="_blank" rel="noopener">
             <img src="assets/img/instragram.png" alt="Instagram" class="footer-icon" />
         </a>
-        <a href="https://tiktok.com/" title="Tiktok" aria-label="Tiktok" target="_blank" rel="noopener">
+        <a href="https://www.tiktok.com/@pekitass_8" title="Tiktok" aria-label="Tiktok" target="_blank" rel="noopener">
             <img src="assets/img/tiktok.png" alt="Tiktok" class="footer-icon" />
         </a>
-        <a href="https://wa.link/dtzewy" title="WhatsApp" aria-label="WhatsApp" target="_blank" rel="noopener">
+        <a href="https://wa.link/l4v3ag" title="WhatsApp" aria-label="WhatsApp" target="_blank" rel="noopener">
             <img src="assets/img/whatsapp.png" alt="WhatsApp" class="footer-icon" />
         </a>
     </div>
@@ -538,7 +538,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="assets/css/whatsapp-button.css">
 
-  <a href="https://wa.link/dtzewy" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chatea con nosotros por WhatsApp">
+  <a href="https://wa.link/l4v3ag" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chatea con nosotros por WhatsApp">
     <i class="fab fa-whatsapp"></i>
     <span>¡Háblanos por WhatsApp!</span>
   </a>
@@ -553,8 +553,41 @@
   <!-- Script del menú móvil -->
   <script src="assets/js/mobile-menu-new.js"></script>
   <!-- Script para el menú de escritorio -->
+  <!-- Script para manejar el cierre del menú móvil al hacer clic en el enlace de contacto -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
+      // Cerrar menú móvil al hacer clic en el enlace de contacto
+      const contactLinks = document.querySelectorAll('.contact-link');
+      const mobileMenu = document.querySelector('.page-header-mobile .menu-wrapper');
+      const closeMenuBtn = document.querySelector('.page-header-mobile .close-menu');
+      const toggleMenu = document.querySelector('.toggle-menu');
+      
+      contactLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          // Cerrar el menú móvil
+          if (mobileMenu && mobileMenu.classList.contains('is-visible')) {
+            mobileMenu.classList.remove('is-visible');
+            if (closeMenuBtn) closeMenuBtn.classList.remove('is-active');
+            if (toggleMenu) toggleMenu.classList.remove('is-active');
+            document.body.style.overflow = '';
+          }
+          
+          // Desplazamiento suave a la sección de contacto
+          const targetId = this.getAttribute('href');
+          if (targetId.startsWith('#')) {
+            e.preventDefault();
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              // Pequeño retraso para asegurar que el menú se cierre antes del desplazamiento
+              setTimeout(() => {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+              }, 300);
+            }
+          }
+        });
+      });
+      
+      // Resto del código del menú de escritorio...
       // --- DESKTOP MENU LOGIC ---
       const desktopDropdowns = document.querySelectorAll('header nav .dropdown');
       desktopDropdowns.forEach(dropdown => {
@@ -585,6 +618,23 @@
         }
       });
       
+      // Cerrar menús desplegables al hacer scroll en escritorio
+      let scrollTimer;
+      window.addEventListener('scroll', function() {
+        if (window.innerWidth > 768) {
+          clearTimeout(scrollTimer);
+          scrollTimer = setTimeout(function() {
+            const openDropdowns = document.querySelectorAll('header nav .dropdown.open');
+            openDropdowns.forEach(dropdown => {
+              dropdown.classList.add('closing');
+              setTimeout(() => {
+                dropdown.classList.remove('open', 'closing');
+              }, 300);
+            });
+          }, 100);
+        }
+      });
+
       // Manejar el redimensionamiento de la ventana
       let resizeTimer;
       window.addEventListener('resize', function() {

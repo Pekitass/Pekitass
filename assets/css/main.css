@@ -198,12 +198,26 @@ nav a.nav-link {
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   z-index: 999;
   border-radius: 0; /* No rounded corners */
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.15s ease, transform 0.01s ease; /* Animación más rápida (0.15s) */
   padding: 2rem;
   border-top: 1px solid #f0f0f0;
 }
 
+/* Estilos para el menú desplegable abierto */
 .dropdown.open > .dropdown-menu {
-  display: block; /* Show on click */
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos para la animación de cierre */
+.dropdown.closing > .dropdown-menu {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease; /* Animación más rápida (0.15s) */
 }
 
 .mega-menu-content {
@@ -263,7 +277,7 @@ nav a.nav-link {
   display: block;
   width: 24px;
   height: 2px;
-  background: #333;
+  background-color: #6D3E05; /* Color café oscuro */
   margin: 5px 0;
   transition: all 0.3s ease;
 }
@@ -373,8 +387,8 @@ nav a.nav-link {
     display: block;
     width: 28px;
     height: 3px;
+    background-color: #6D3E05; /* Color café oscuro */
     margin: 5px 0;
-    background: #000000;
     border-radius: 2px;
     transition: 0.3s;
   }
@@ -572,21 +586,62 @@ nav a.nav-link {
 
 /* Ajustes para la sección de contacto */
 #contacto {
-  scroll-margin-top: 90px; /* Mismo valor que para la sección de servicios */
-  padding-top: 1rem;
+  scroll-margin-top: 70px; /* Ajustado para que el título sea visible */
+  padding-top: 0.5rem;
+  position: relative;
+  top: -50px; /* Mueve la sección hacia arriba */
+  padding-bottom: 50px; /* Compensa el movimiento hacia arriba */
+  margin-bottom: -20px; /* Compensación para el footer */
 }
 
 /* Contacto con QR */
 .contact-section {
   background-color: #f9f9f9;
-  padding: 2.5rem 1.5rem 2rem;
+  padding: 1.5rem 1.5rem 2rem; /* Aumentado el padding superior para el título */
   border-radius: 18px;
   max-width: 900px;
   box-shadow: 0 2px 12px rgba(10,35,66,0.07);
-  margin: 0 auto 3rem;
-  min-height: 600px;
+  margin: 0 auto 2rem;
+  min-height: auto;
   display: flex;
   flex-direction: column;
+}
+
+/* Ajuste adicional para el título de contacto */
+.contact-title {
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+  font-size: 1.6rem; /* Tamaño de fuente más grande para mejor legibilidad */
+  color: #333; /* Color más oscuro para mejor contraste */
+  position: relative;
+  z-index: 1;
+}
+
+/* Ajustes específicos para móviles */
+@media (max-width: 768px) {
+  #contacto {
+    scroll-margin-top: 60px;
+    padding-top: 0;
+    top: -30px; /* Menos desplazamiento en móviles */
+    padding-bottom: 30px;
+    margin-bottom: -10px;
+  }
+  
+  .contact-section {
+    padding: 1.2rem 1rem 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    padding-top: 0.5rem; /* Pequeño espacio para el título */
+  }
+  
+  .contact-flex {
+    min-height: auto;
+    gap: 1.5rem;
+  }
 }
 
 .contact-flex {

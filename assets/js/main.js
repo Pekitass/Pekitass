@@ -112,11 +112,51 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
     }
+    // Variable para manejar el debounce del scroll
+    let scrollTimer;
+    
+    // Función para manejar el cierre de los menús desplegables en escritorio
+    function closeDesktopMenus() {
+      const desktopDropdowns = document.querySelectorAll('header nav .dropdown');
+      desktopDropdowns.forEach(dropdown => {
+        if (dropdown.classList.contains('open')) {
+          dropdown.classList.add('closing');
+          dropdown.classList.remove('open');
+          
+          // Eliminar la clase de cierre después de la animación
+          setTimeout(() => {
+            dropdown.classList.remove('closing');
+            const menu = dropdown.querySelector('.dropdown-menu');
+            if (menu) {
+              menu.style.display = 'none';
+            }
+          }, 300);
+        }
+      });
+    }
+    
+    // Función para manejar el scroll
+    function handleScroll() {
+      // Solo para escritorio
+      if (window.innerWidth > 768) {
+        // Limpiar el temporizador anterior
+        clearTimeout(scrollTimer);
+        
+        // Establecer un nuevo temporizador
+        scrollTimer = setTimeout(closeDesktopMenus, 100);
+      }
+    }
+    
+    // Función principal de cierre en scroll
     function closeMenuOnScroll() {
-      if (window.innerWidth <= 768 && navMenu.classList.contains('open')) {
+      // Cerrar menú móvil si está abierto
+      if (window.innerWidth <= 768 && navMenu && navMenu.classList.contains('open')) {
         navMenu.classList.remove('open');
         menuToggle.setAttribute('aria-expanded', 'false');
       }
+      
+      // Para escritorio, manejamos el cierre en handleScroll
+      handleScroll();
     }
     document.addEventListener('click', closeMenuOnOutsideOrScroll);
     window.addEventListener('scroll', closeMenuOnScroll);
