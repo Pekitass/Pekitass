@@ -3,19 +3,276 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Pelotas y Juguetes de Cabuya para Gatos | Pekitass</title>
   <meta name="description" content="Pelotas, ratones y otros juguetes de cabuya para el entretenimiento de tu gato.">
   <link rel="icon" type="image/png" href="../../../assets/img/pekitass-logo.png">
   <link rel="stylesheet" href="../../../assets/css/main.css">
+  <link rel="stylesheet" href="../../../assets/css/mobile-menu-new.css">
+  <link rel="stylesheet" href="../../../assets/css/whatsapp-button.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body class="subpage">
+  <!-- Encabezado y navegación -->
   <header>
-    <!-- Header reutilizado -->
+    <div class="navbar">
+      <a href="../../../index.html" class="logo" id="logo-home">
+        <img src="../../../assets/img/pekitass-logo.png" alt="Pekitass Logo" class="logo-icon" />
+        <img src="../../../assets/img/pekitass-letras.png" alt="Pekitass" class="logo-letras" />
+      </a>
+      <button class="toggle-menu mobile-only" type="button" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+      <nav class="desktop-nav">
+        <ul id="main-menu">
+          <li class="dropdown">
+              <a href="../../../perros/" class="nav-link dropdown-toggle">Perros</a>
+              <div class="dropdown-menu">
+                <div class="mega-menu-content">
+                  <div class="mega-menu-column">
+                    <h3>Alimento</h3>
+                    <ul>
+                      <li><a href="../../../perros/alimento/seco.html">Seco</a></li>
+                      <li><a href="../../../perros/alimento/humedo.html">Húmedo</a></li>
+                      <li><a href="../../../perros/alimento/natural-congelado.html">Natural y congelado</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h3>Snacks</h3>
+                    <ul>
+                      <li><a href="../../../perros/snack/galletas.html">Galletas</a></li>
+                      <li><a href="../../../perros/snack/huesos.html">Huesos</a></li>
+                      <li><a href="../../../perros/snack/dentales.html">Dentales</a></li>
+                      <li><a href="../../../perros/snack/entrenamiento.html">Entrenamiento</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h3>Juguetes</h3>
+                    <ul>
+                      <li><a href="../../../perros/juguetes/interactivos.html">Interactivos</a></li>
+                      <li><a href="../../../perros/juguetes/duros.html">Duros</a></li>
+                      <li><a href="../../../perros/juguetes/pelotas-jaladores.html">Pelotas y jaladores</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h3>Belleza e Higiene</h3>
+                    <ul>
+                      <li><a href="../../../perros/belleza-higiene/bano-aseo.html">Baño y aseo</a></li>
+                      <li><a href="../../../perros/belleza-higiene/peluqueria.html">Peluquería</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h3>Complementos y Accesorios</h3>
+                    <ul>
+                      <li><a href="../../../perros/complementos-accesorios/ropa-otros.html">Ropa y otros</a></li>
+                      <li><a href="../../../perros/complementos-accesorios/camas-casas.html">Camas y casas</a></li>
+                      <li><a href="../../../perros/complementos-accesorios/collares-arnes-correa.html">Collares, arnés y correa</a></li>
+                      <li><a href="../../../perros/complementos-accesorios/comedores-bebederos.html">Comedores y bebederos</a></li>
+                      <li><a href="../../../perros/complementos-accesorios/transporte.html">Transporte</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </li>
+          <li class="dropdown">
+              <a href="../../../gatos/" class="nav-link dropdown-toggle">Gatos</a>
+              <div class="dropdown-menu">
+                <div class="mega-menu-content">
+                  <div class="mega-menu-column">
+                    <h3>Alimento</h3>
+                    <ul>
+                      <li><a href="../../../gatos/alimento/seco.html">Seco</a></li>
+                      <li><a href="../../../gatos/alimento/humedo.html">Húmedo</a></li>
+                      <li><a href="../../../gatos/alimento/natural-congelado.html">Natural y congelado</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h3>Snacks</h3>
+                    <ul>
+                      <li><a href="../../../gatos/snack/galletas.html">Galletas</a></li>
+                      <li><a href="../../../gatos/snack/dentales.html">Dentales</a></li>
+                      <li><a href="../../../gatos/snack/entrenamiento.html">Entrenamiento</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h3>Juguetes</h3>
+                    <ul>
+                      <li><a href="../../../gatos/juguetes/varas-canas.html">Varas y cañas</a></li>
+                      <li><a href="../../../gatos/juguetes/interactivos.html">Interactivos</a></li>
+                      <li><a href="../../../gatos/juguetes/pelotas-cabuya.html">Pelotas y cabuya</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h3>Belleza e Higiene</h3>
+                    <ul>
+                      <li><a href="../../../gatos/belleza-higiene/bano-aseo.html">Baño y aseo</a></li>
+                      <li><a href="../../../gatos/belleza-higiene/peluqueria.html">Peluquería</a></li>
+                      <li><a href="../../../gatos/belleza-higiene/arenero-arena.html">Arenero y arena</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-column">
+                    <h3>Complementos y Accesorios</h3>
+                    <ul>
+                      <li><a href="../../../gatos/complementos-accesorios/camas-casas-gimnasios.html">Camas, casas y gimnasios</a></li>
+                      <li><a href="../../../gatos/complementos-accesorios/comedores-bebederos.html">Comedores y bebederos</a></li>
+                      <li><a href="../../../gatos/complementos-accesorios/collares-arnes-correa.html">Collares, arnés y correa</a></li>
+                      <li><a href="../../../gatos/complementos-accesorios/transporte.html">Transporte</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </li>
+          <li><a href="../../../ofertas/" class="nav-link">Ofertas</a></li>
+          <li><a href="../../../index.html#contacto" class="nav-link contact-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  <!-- Menú Móvil -->
+  <div class="page-header-mobile">
+    <div class="menu-wrapper">
+      <div class="list-wrapper">
+        <div class="close-menu-bar">
+            <button class="toggle-menu close-menu" type="button" aria-label="Cerrar menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <ul class="menu level-1">
+          <li><a href="../../../index.html">Inicio</a></li>
+          <!-- PERROS -->
+          <li>
+            <a href="../../../perros/" class="nested">Perros</a>
+            <ul class="sub-menu level-2">
+              <!-- CATEGORÍA: Alimento -->
+              <li>
+                <a href="../../../perros/alimento/" class="nested">Alimento</a>
+                <ul class="sub-menu level-3">
+                  <li><a href="../../../perros/alimento/seco.html">Seco</a></li>
+                  <li><a href="../../../perros/alimento/humedo.html">Húmedo</a></li>
+                  <li><a href="../../../perros/alimento/natural-congelado.html">Natural y congelado</a></li>
+                </ul>
+              </li>
+              <!-- CATEGORÍA: Snack -->
+              <li>
+                <a href="../../../perros/snack/" class="nested">Snack</a>
+                <ul class="sub-menu level-3">
+                  <li><a href="../../../perros/snack/galletas.html">Galletas</a></li>
+                  <li><a href="../../../perros/snack/huesos.html">Huesos</a></li>
+                  <li><a href="../../../perros/snack/dentales.html">Dentales</a></li>
+                  <li><a href="../../../perros/snack/entrenamiento.html">Entrenamiento</a></li>
+                </ul>
+              </li>
+              <!-- CATEGORÍA: Juguetes -->
+              <li>
+                <a href="../../../perros/juguetes/" class="nested">Juguetes</a>
+                <ul class="sub-menu level-3">
+                  <li><a href="../../../perros/juguetes/interactivos.html">Interactivos</a></li>
+                  <li><a href="../../../perros/juguetes/duros.html">Duros</a></li>
+                  <li><a href="../../../perros/juguetes/pelotas-jaladores.html">Pelotas y jaladores</a></li>
+                </ul>
+              </li>
+              <!-- CATEGORÍA: Belleza y higiene -->
+              <li>
+                <a href="../../../perros/belleza-higiene/" class="nested">Belleza y higiene</a>
+                <ul class="sub-menu level-3">
+                  <li><a href="../../../perros/belleza-higiene/bano-aseo.html">Baño y aseo</a></li>
+                  <li><a href="../../../perros/belleza-higiene/peluqueria.html">Peluquería</a></li>
+                </ul>
+              </li>
+              <!-- CATEGORÍA: Complementos y accesorios -->
+              <li>
+                <a href="#" class="nested">Complementos y accesorios</a>
+                <ul class="sub-menu level-3">
+                  <li><a href="../../../perros/complementos-accesorios/ropa-otros.html">Ropa y otros</a></li>
+                  <li><a href="../../../perros/complementos-accesorios/camas-casas.html">Camas y casas</a></li>
+                  <li><a href="../../../perros/complementos-accesorios/collares-arnes-correa.html">Collares, arnés y correa</a></li>
+                  <li><a href="../../../perros/complementos-accesorios/comedores-bebederos.html">Comedores y bebederos</a></li>
+                  <li><a href="../../../perros/complementos-accesorios/transporte.html">Transporte</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- GATOS -->
+          <li>
+            <a href="../../../gatos/" class="nested">Gatos</a>
+            <ul class="sub-menu level-2">
+              <!-- CATEGORÍA: Alimento -->
+              <li>
+                <a href="../../../gatos/alimento/" class="nested">Alimento</a>
+                <ul class="sub-menu level-3">
+                  <li><a href="../../../gatos/alimento/seco.html">Seco</a></li>
+                  <li><a href="../../../gatos/alimento/humedo.html">Húmedo</a></li>
+                  <li><a href="../../../gatos/alimento/natural-congelado.html">Natural y congelado</a></li>
+                </ul>
+              </li>
+              <!-- CATEGORÍA: Snack -->
+              <li>
+                <a href="../../../gatos/snack/" class="nested">Snack</a>
+                <ul class="sub-menu level-3">
+                  <li><a href="../../../gatos/snack/galletas.html">Galletas</a></li>
+                  <li><a href="../../../gatos/snack/dentales.html">Dentales</a></li>
+                  <li><a href="../../../gatos/snack/entrenamiento.html">Entrenamiento</a></li>
+                </ul>
+              </li>
+              <!-- CATEGORÍA: Juguetes -->
+              <li>
+                <a href="../../../gatos/juguetes/" class="nested">Juguetes</a>
+                <ul class="sub-menu level-3">
+                  <li><a href="../../../gatos/juguetes/varas-canas.html">Varas y cañas</a></li>
+                  <li><a href="../../../gatos/juguetes/interactivos.html">Interactivos</a></li>
+                  <li><a href="../../../gatos/juguetes/pelotas-cabuya.html">Pelotas y cabuya</a></li>
+                </ul>
+              </li>
+              <!-- CATEGORÍA: Belleza y salud -->
+              <li>
+                <a href="../../../gatos/belleza-higiene/" class="nested">Belleza y salud</a>
+                <ul class="sub-menu level-3">
+                  <li><a href="../../../gatos/belleza-higiene/bano-aseo.html">Baño y aseo</a></li>
+                  <li><a href="../../../gatos/belleza-higiene/peluqueria.html">Peluquería</a></li>
+                  <li><a href="../../../gatos/belleza-higiene/arenero-arena.html">Arenero y arena</a></li>
+                </ul>
+              </li>
+              <!-- CATEGORÍA: Complementos y accesorios -->
+              <li>
+                <a href="#" class="nested">Complementos y accesorios</a>
+                <ul class="sub-menu level-3">
+                  <li><a href="../../../gatos/complementos-accesorios/camas-casas-gimnasios.html">Camas, casas y gimnasios</a></li>
+                  <li><a href="../../../gatos/complementos-accesorios/comedores-bebederos.html">Comedores y bebederos</a></li>
+                  <li><a href="../../../gatos/complementos-accesorios/collares-arnes-correa.html">Collares, arnés y correa</a></li>
+                  <li><a href="../../../gatos/complementos-accesorios/transporte.html">Transporte</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="../../../ofertas/">Ofertas</a></li>
+          <li><a href="../../../index.html#contacto" class="contact-link">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="list-wrapper">
+        <button type="button" class="back-one-level">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" /></svg>
+          <span>Atrás</span>
+        </button>
+        <div class="sub-menu-wrapper"></div>
+      </div>
+      <div class="list-wrapper">
+        <button type="button" class="back-one-level">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" /></svg>
+          <span>Atrás</span>
+        </button>
+        <div class="sub-menu-wrapper"></div>
+      </div>
+    </div>
+  </div>
 
   <main>
     <section class="services">
-      <h1 class="services-title">Gatos / Juguetes / Pelotas y Cabuya</h1>
+      <h1 class="services-title">Gatos · Juguetes · Pelotas y Cabuya</h1>
       <div class="services-list product-grid">
 
         <!-- Producto 1 -->
@@ -76,19 +333,90 @@
     </section>
   </main>
 
+  </main>
+
   <footer>
-    <!-- Footer reutilizado -->
+    <div class="footer-social">
+      <a href="https://www.facebook.com/share/1FYpscAquS/" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener">
+        <img src="../../../assets/img/facebook.png" alt="Facebook" class="footer-icon" />
+      </a>
+      <a href="https://www.instagram.com/pekitass_8?igsh=cXdkaW5zeXh6MjI3" title="Instagram" aria-label="Instagram" target="_blank" rel="noopener">
+        <img src="../../../assets/img/instagram.png" alt="Instagram" class="footer-icon" />
+      </a>
+      <a href="https://www.tiktok.com/@pekitass_8" title="TikTok" aria-label="TikTok" target="_blank" rel="noopener">
+        <img src="../../../assets/img/tiktok.png" alt="TikTok" class="footer-icon" />
+      </a>
+      <a href="https://wa.link/l4v3ag" title="WhatsApp" aria-label="WhatsApp" target="_blank" rel="noopener">
+        <img src="../../../assets/img/whatsapp.png" alt="WhatsApp" class="footer-icon" />
+      </a>
+    </div>
+    <div class="footer-copyright">
+      &copy; 2025 Pekitass. Todos los derechos reservados.<br>
+      La tienda preferida de tu mascota.
+    </div>
   </footer>
 
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.link/l4v3ag" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chatea con nosotros por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span>¡Háblanos por WhatsApp!</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="../../../assets/js/main.js"></script>
+  <script src="../../../assets/js/mobile-menu-new.js"></script>
   <script>
-    document.querySelectorAll('.buy-btn').forEach(button => {
-      button.addEventListener('click', function() {
-        const producto = this.getAttribute('data-product');
-        const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
-        window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+    document.addEventListener('DOMContentLoaded', function() {
+      // Menú desplegable para escritorio
+      const dropdowns = document.querySelectorAll('.dropdown');
+      dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('.dropdown-toggle');
+        const menu = dropdown.querySelector('.dropdown-menu');
+        if (toggle && menu) {
+          toggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            // Cerrar otros menús abiertos
+            document.querySelectorAll('.dropdown.open').forEach(openDropdown => {
+              if (openDropdown !== dropdown) {
+                openDropdown.classList.remove('open');
+              }
+            });
+            // Alternar el menú actual
+            dropdown.classList.toggle('open');
+          });
+        }
+      });
+      // Cerrar menús al hacer clic fuera de ellos
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.dropdown')) {
+          document.querySelectorAll('.dropdown.open').forEach(openDropdown => {
+            openDropdown.classList.remove('open');
+          });
+        }
+      });
+      // Cerrar menú al hacer scroll en escritorio
+      let scrollTimer;
+      window.addEventListener('scroll', function() {
+        if (window.innerWidth > 768) { // Solo en escritorio
+          clearTimeout(scrollTimer);
+          scrollTimer = setTimeout(function() {
+            document.querySelectorAll('.dropdown.open').forEach(dropdown => {
+              dropdown.classList.remove('open');
+            });
+          }, 100);
+        }
+      });
+      // Configurar botones de compra por WhatsApp
+      document.querySelectorAll('.buy-btn').forEach(button => {
+        button.addEventListener('click', function() {
+          const productName = this.getAttribute('data-product');
+          const message = `Hola, estoy interesado en el producto: ${productName}`;
+          const whatsappUrl = `https://wa.link/l4v3ag?text=${encodeURIComponent(message)}`;
+          window.open(whatsappUrl, '_blank');
+        });
       });
     });
   </script>
-  <script src="../../../assets/js/main.js"></script>
 </body>
 </html>
