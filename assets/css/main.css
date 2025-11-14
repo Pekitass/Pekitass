@@ -493,7 +493,7 @@ nav a.nav-link {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  min-height: 410px;
+  min-height: 480px; /* Ajuste para acomodar 6 líneas de descripción */
   height: auto;
   position: relative;
 }
@@ -550,10 +550,22 @@ nav a.nav-link {
 .service-desc {
   font-size: 0.98rem;
   color: #444b5a;
-  max-height: 4.4em;
+  max-height: 9.5em; /* Aumentado para mostrar hasta 6 líneas */
+  line-height: 1.5; /* Mejor interlineado para mejor legibilidad */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* Aumentado a 6 líneas */
+  line-clamp: 6; /* Versión estándar */
+  -webkit-box-orient: vertical;
+  margin: 0.5rem 0.8rem 1rem; /* Ajuste de márgenes */
+  text-align: left; /* Alineación del texto a la izquierda */
+  word-wrap: break-word; /* Asegura que las palabras largas se ajusten */
+  -webkit-hyphens: auto; /* Permite separación silábica */
+  -ms-hyphens: auto;
+  hyphens: auto;
+  padding: 0 0.3rem; /* Pequeño padding a los lados */
 }
 
 @media (min-width: 769px) {
