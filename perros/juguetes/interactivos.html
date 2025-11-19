@@ -304,27 +304,27 @@
         </div>
         <!-- Producto 4 -->
         <div class="service product-card">
-          <div class="service-icon"><img src="../../../assets/img/pets/15.jpg" alt="Pelota Interactiva con Sonido" class="service-img-icon"></div>
-          <div class="service-title">Pelota Interactiva con Sonido</div>
-          <div class="service-desc">Una pelota que emite sonidos divertidos al moverse, manteniendo a tu perro enganchado.</div>
-          <div class="product-price">$35,000 COP</div>
-          <button class="service-btn buy-btn" data-product="Pelota Interactiva con Sonido">Comprar por WhatsApp</button>
+          <div class="service-icon"><img src="../../../assets/img/pets/nuevosproductos.jpeg" alt="Nuevos productos en camino" class="service-img-icon"></div>
+          <div class="service-title">Nuevos productos en camino</div>
+          <div class="service-desc">¡🤩 Muy pronto llegarán nuevos productos para tu peludo favorito! Serán opciones únicas, de gran calidad, pensadas para hacerlo feliz cada día. 🥳 Mantente atento, se vienen sorpresas increíbles que te encantarán.</div>
+          <div class="product-price">$ - COP</div>
+          <button class="service-btn buy-btn" data-product="Nuevos productos en camino">Comprar por WhatsApp</button>
         </div>
         <!-- Producto 5 -->
         <div class="service product-card">
-          <div class="service-icon"><img src="../../../assets/img/pets/juguete-interactivo-05.jpg" alt="Juguete Rellenable Classic" class="service-img-icon"></div>
-          <div class="service-title">Juguete Rellenable Classic</div>
-          <div class="service-desc">El clásico juguete de goma para rellenar con premios o comida húmeda.</div>
-          <div class="product-price">$40,000 COP</div>
-          <button class="service-btn buy-btn" data-product="Juguete Rellenable Classic">Comprar por WhatsApp</button>
+          <div class="service-icon"><img src="../../../assets/img/pets/nuevosproductos.jpeg" alt="Nuevos productos en camino" class="service-img-icon"></div>
+          <div class="service-title">Nuevos productos en camino</div>
+          <div class="service-desc">¡🤩 Muy pronto llegarán nuevos productos para tu peludo favorito! Serán opciones únicas, de gran calidad, pensadas para hacerlo feliz cada día. 🥳 Mantente atento, se vienen sorpresas increíbles que te encantarán.</div>
+          <div class="product-price">$ - COP</div>
+          <button class="service-btn buy-btn" data-product="Nuevos productos en camino">Comprar por WhatsApp</button>
         </div>
         <!-- Producto 6 -->
         <div class="service product-card">
-          <div class="service-icon"><img src="../../../assets/img/pets/juguete-interactivo-06.jpg" alt="Torre de Discos Deslizantes" class="service-img-icon"></div>
-          <div class="service-title">Torre de Discos Deslizantes</div>
-          <div class="service-desc">Rompecabezas de nivel intermedio que requiere que tu perro deslice discos para encontrar premios.</div>
-          <div class="product-price">$75,000 COP</div>
-          <button class="service-btn buy-btn" data-product="Torre de Discos Deslizantes">Comprar por WhatsApp</button>
+          <div class="service-icon"><img src="../../../assets/img/pets/nuevosproductos.jpeg" alt="Nuevos productos en camino" class="service-img-icon"></div>
+          <div class="service-title">Nuevos productos en camino</div>
+          <div class="service-desc">¡🤩 Muy pronto llegarán nuevos productos para tu peludo favorito! Serán opciones únicas, de gran calidad, pensadas para hacerlo feliz cada día. 🥳 Mantente atento, se vienen sorpresas increíbles que te encantarán.</div>
+          <div class="product-price">$ - COP</div>
+          <button class="service-btn buy-btn" data-product="Nuevos productos en camino">Comprar por WhatsApp</button>
         </div>
       </div>
     </section>
@@ -402,13 +402,30 @@
           }, 100);
         }
       });
-      // Configurar botones de compra por WhatsApp
+      // Script para botones de compra
       document.querySelectorAll('.buy-btn').forEach(button => {
         button.addEventListener('click', function() {
-          const productName = this.getAttribute('data-product');
-          const message = `Hola, estoy interesado en el producto: ${productName}`;
-          const whatsappUrl = `https://wa.link/l4v3ag?text=${encodeURIComponent(message)}`;
-          window.open(whatsappUrl, '_blank');
+          const producto = this.getAttribute('data-product');
+          const seccion = "Perros · Juguetes · Interactivos";
+
+          const emojiSaludo = '\uD83D\uDE0A'; // 😊
+          const emojiFinal  = '\uD83D\uDE04'; // 😄
+
+          const lineas = [
+            `Hola Pekitass ${emojiSaludo}`,
+            `Me interesa el producto *${producto}* de la sección *${seccion}*.`,
+            '¿Me pueden compartir más información sobre este producto y si está disponible?',
+            `Gracias. ${emojiFinal}`
+          ];
+
+          const texto = lineas.join('\n');
+          console.log(texto); // aquí ya ves los emojis bien
+
+          const mensaje = encodeURIComponent(texto);
+
+          // 👉 Usa api.whatsapp.com en vez de wa.me
+          const url = `https://api.whatsapp.com/send?phone=573046599425&text=${mensaje}`;
+          window.open(url, '_blank');
         });
       });
     });
