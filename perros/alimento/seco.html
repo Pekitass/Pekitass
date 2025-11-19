@@ -287,7 +287,7 @@
 
   <main>
     <section class="services">
-      <h1 class="services-title">Perros · Alimento · Seco</h1>
+      <h1 class="services-title" data-section="Perros · Alimento · Seco">Perros · Alimento · Seco</h1>
       <div class="services-list product-grid">
 
         <!-- Producto 1 -->
@@ -469,8 +469,9 @@
       document.querySelectorAll('.buy-btn').forEach(button => {
         button.addEventListener('click', function() {
           const producto = this.getAttribute('data-product');
-          const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. Me gustaría comprarlo.`);
-          window.open(`https://wa.me/573233389238?text=${mensaje}`, '_blank');
+          const seccion = this.getAttribute('data-section');
+          const mensaje = encodeURIComponent(`Hola Pekitass, estoy interesado en el producto *${producto}*. De la sección *${seccion}*.`);
+          window.open(`https://wa.me/573046599425?text=${mensaje}`, '_blank');
         });
       });
     });
