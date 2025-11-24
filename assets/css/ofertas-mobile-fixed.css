@@ -10,7 +10,7 @@
   box-sizing: border-box;
   min-height: 360px;
   overflow: hidden;
-  background: #f9f9f9;
+  background: var(--color-bg);
   border-radius: 10px;
 }
 
