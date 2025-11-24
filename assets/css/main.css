@@ -89,7 +89,7 @@
 */
 
 :root {
-  --color-bg: #f6f9ff;
+  --color-bg: #f5eee7;
   --color-primary: #185adb;
   --color-dark: #000000;
   --color-white: #ffffff;
@@ -855,7 +855,7 @@ footer {
 /* Estilos para el carrusel de ofertas */
 .ofertas-section {
   padding: 2rem 0;
-  background-color: #f9f9f9;
+  background-color: var(--color-bg);
   margin: 0;
   position: relative;
 }
