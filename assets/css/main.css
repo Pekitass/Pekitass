@@ -90,11 +90,11 @@
 
 :root {
   --color-bg: #f5eee7;
-  --color-primary: #185adb;
+  --color-primary: #6D3E05;
   --color-dark: #000000;
   --color-white: #ffffff;
   --color-text: #000000;
-  --color-accent: #185adb;
+  --color-accent: #6D3E05;
 }
 
 * {
@@ -424,7 +424,7 @@ nav a.nav-link {
   margin-bottom: 2rem;
   font-weight: 500;
   color: #fff;
-  text-shadow: 0 2px 8px rgba(10,35,66,0.25), 0 1px 0 #185adb;
+  text-shadow: 0 2px 8px rgba(10,35,66,0.25), 0 1px 0 #6D3E05;
   letter-spacing: 0.01em;
 }
 
