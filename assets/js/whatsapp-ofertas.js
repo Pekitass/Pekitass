@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         // Crear el mensaje personalizado con formato
-        const mensaje = `¡Hola *PC Soluciones*! \n\n` +
+        const mensaje = `¡Hola *Pekitass*! \n\n` +
                       `Acabo de ver su oferta especial de *${nombreOferta}* en la sección de *Ofertas Especiales* y me gustaría obtener más información.\n\n` +
                       `¿Podrían brindarme más detalles?`;
         
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const mensajeCodificado = encodeURIComponent(mensaje);
         
         // Crear el enlace de WhatsApp con el mensaje personalizado
-        const phoneNumber = '3046599425'; // Número de teléfono de PC Soluciones
+        const phoneNumber = '3046599425'; // Número de teléfono de Pekitass
         const urlWhatsApp = `https://wa.me/${phoneNumber}?text=${mensajeCodificado}`;
         
         // Abrir WhatsApp en una nueva pestaña
